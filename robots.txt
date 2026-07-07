@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://shuyuan-chef.com/sitemap.xml
