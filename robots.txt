@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
 Sitemap: https://shuyuan-chef.com/sitemap.xml
+Sitemap: https://shuyuan-chef.com/video-sitemap.xml
