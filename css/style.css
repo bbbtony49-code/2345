@@ -220,6 +220,31 @@ nav.scrolled {
     transform: rotate(-45deg);
 }
 
+.lang-switch {
+    font-family: var(--display);
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    color: var(--gold, #C9A227);
+    border: 1px solid var(--gold, #C9A227);
+    padding: 0.3rem 0.7rem;
+    border-radius: 2px;
+    margin-right: 0.75rem;
+    transition: all 0.3s var(--ease);
+    font-weight: 500;
+}
+
+.lang-switch:hover {
+    background: var(--gold, #C9A227);
+    color: #111;
+}
+
+.sidebar-lang {
+    font-family: var(--display) !important;
+    letter-spacing: 0.15em !important;
+    color: var(--gold, #C9A227) !important;
+    font-style: italic;
+}
+
 .nav-cta {
     font-size: 0.68rem;
     color: #fff;
@@ -370,6 +395,17 @@ nav.scrolled {
     text-transform: uppercase;
     font-style: italic;
     font-weight: 300;
+}
+
+.hero-manifesto {
+    font-family: var(--display);
+    font-size: clamp(1.6rem, 3.4vw, 2.6rem);
+    font-style: italic;
+    font-weight: 300;
+    color: var(--text);
+    letter-spacing: 0.04em;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
 }
 
 .hero-title {
