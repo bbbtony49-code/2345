@@ -58,14 +58,26 @@
   gtag('config', 'G-2P9MZY1F46');
 gtag('config', 'AW-11459072287');
 
-function gtag_report_conversion(url) {
+function gtag_report_conversion_phone(url) {
     var callback = function () {
         if (typeof(url) != 'undefined') {
             window.location = url;
         }
     };
     gtag('event', 'conversion', {
-        'send_to': 'AW-11459072287/OO6CCLSOzcgcEJ-ijtgq',
+        'send_to': ['AW-11459072287/OO6CCLSOzcgcEJ-ijtgq', 'AW-11459072287/x34qCJy8380cEJ-ijtgq'],
+        'event_callback': callback
+    });
+    return false;
+}
+function gtag_report_conversion_line(url) {
+    var callback = function () {
+        if (typeof(url) != 'undefined') {
+            window.location = url;
+        }
+    };
+    gtag('event', 'conversion', {
+        'send_to': ['AW-11459072287/OO6CCLSOzcgcEJ-ijtgq', 'AW-11459072287/5SWLCIKn980cEJ-ijtgq'],
         'event_callback': callback
     });
     return false;
@@ -141,12 +153,12 @@ function gtag_report_conversion(url) {
             <p class="section-desc">無論是家庭聚餐、企業餐宴或董事長宴請，我們都會在最短時間內回覆您的需求</p>
         </div>
         <div class="grid-3">
-            <a href="tel:0911247783" onclick="return gtag_report_conversion('tel:0911247783');" class="card">
+            <a href="tel:0911247783" onclick="return gtag_report_conversion_phone('tel:0911247783');" class="card">
                 <h3>📞 電話預約</h3>
                 <p>最快速的聯繫方式，主廚團隊將直接與您討論日期、人數與需求。</p>
                 <span class="btn btn-solid" style="width:100%;text-align:center;display:inline-block;">0911-247-783</span>
             </a>
-            <a href="https://line.me/ti/p/RTufr7jL8G" onclick="return gtag_report_conversion('https://line.me/ti/p/RTufr7jL8G');" target="_blank" rel="noopener" class="card">
+            <a href="https://line.me/ti/p/RTufr7jL8G" onclick="return gtag_report_conversion_line('https://line.me/ti/p/RTufr7jL8G');" target="_blank" rel="noopener" class="card">
                 <h3>💬 LINE 諮詢</h3>
                 <p>加入官方帳號，傳送訊息即可獲得專屬報價與菜單建議，圖文並茂更清楚。</p>
                 <span class="btn" style="width:100%;text-align:center;display:inline-block;">加入 LINE 官方帳號</span>
@@ -191,8 +203,8 @@ function gtag_report_conversion(url) {
         <h2>讓每一次餐宴，都成為值得珍藏的回憶</h2>
         <p>Luxury Private Chef Service</p>
         <div class="cta-buttons">
-            <a href="tel:0911247783" onclick="return gtag_report_conversion('tel:0911247783');" class="btn btn-solid">📞 致電預約 0911-247-783</a>
-            <a href="https://line.me/ti/p/RTufr7jL8G" onclick="return gtag_report_conversion('https://line.me/ti/p/RTufr7jL8G');" class="btn" target="_blank" rel="noopener">💬 LINE 專人諮詢</a>
+            <a href="tel:0911247783" onclick="return gtag_report_conversion_phone('tel:0911247783');" class="btn btn-solid">📞 致電預約 0911-247-783</a>
+            <a href="https://line.me/ti/p/RTufr7jL8G" onclick="return gtag_report_conversion_line('https://line.me/ti/p/RTufr7jL8G');" class="btn" target="_blank" rel="noopener">💬 LINE 專人諮詢</a>
         </div>
     </section>
 
@@ -235,8 +247,8 @@ function gtag_report_conversion(url) {
         <div class="footer-col">
             <h4>聯絡資訊</h4>
             <ul>
-                <li><a href="tel:0911247783" onclick="return gtag_report_conversion('tel:0911247783');">📞 0911-247-783</a></li>
-                <li><a href="https://line.me/ti/p/RTufr7jL8G" onclick="return gtag_report_conversion('https://line.me/ti/p/RTufr7jL8G');" target="_blank">💬 LINE 預約</a></li>
+                <li><a href="tel:0911247783" onclick="return gtag_report_conversion_phone('tel:0911247783');">📞 0911-247-783</a></li>
+                <li><a href="https://line.me/ti/p/RTufr7jL8G" onclick="return gtag_report_conversion_line('https://line.me/ti/p/RTufr7jL8G');" target="_blank">💬 LINE 預約</a></li>
                 <li><a href="contact.html">📧 信件聯繫</a></li>
                 <li><a href="https://www.instagram.com/privatecheflin/" target="_blank" rel="noopener">IG官網</a></li>
                 <li><a href="https://www.facebook.com/ChefDongLiLin" target="_blank" rel="noopener">主廚臉書官網</a></li>
@@ -250,12 +262,12 @@ function gtag_report_conversion(url) {
 </footer>
 
 <div class="floating-cta">
-    <a href="tel:0911247783" onclick="return gtag_report_conversion('tel:0911247783');" class="floating-btn">📞</a>
-    <a href="https://line.me/ti/p/RTufr7jL8G" onclick="return gtag_report_conversion('https://line.me/ti/p/RTufr7jL8G');" class="floating-btn">💬</a>
+    <a href="tel:0911247783" onclick="return gtag_report_conversion_phone('tel:0911247783');" class="floating-btn">📞</a>
+    <a href="https://line.me/ti/p/RTufr7jL8G" onclick="return gtag_report_conversion_line('https://line.me/ti/p/RTufr7jL8G');" class="floating-btn">💬</a>
 </div>
 <div class="floating-cta">
-        <a href="tel:0911247783" onclick="return gtag_report_conversion('tel:0911247783');" class="floating-btn" title="立即來電" aria-label="致電預約">📞</a>
-        <a href="https://line.me/ti/p/RTufr7jL8G" onclick="return gtag_report_conversion('https://line.me/ti/p/RTufr7jL8G');" class="floating-btn" title="LINE 諮詢" target="_blank" rel="noopener" aria-label="LINE 諮詢">💬</a>
+        <a href="tel:0911247783" onclick="return gtag_report_conversion_phone('tel:0911247783');" class="floating-btn" title="立即來電" aria-label="致電預約">📞</a>
+        <a href="https://line.me/ti/p/RTufr7jL8G" onclick="return gtag_report_conversion_line('https://line.me/ti/p/RTufr7jL8G');" class="floating-btn" title="LINE 諮詢" target="_blank" rel="noopener" aria-label="LINE 諮詢">💬</a>
     </div>
 
     <script src="js/main.js"></script>
