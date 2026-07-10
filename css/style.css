@@ -2395,8 +2395,8 @@ footer {
 }
 
 .social-icons a svg {
-    width: 17px;
-    height: 17px;
+    width: 17px !important;
+    height: 17px !important;
     fill: currentColor;
 }
 
