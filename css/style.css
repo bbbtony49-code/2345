@@ -275,6 +275,7 @@ nav.scrolled {
     top: 0;
     width: 280px;
     height: 100vh;
+    height: 100dvh;
     background: var(--bg);
     border-right: 1px solid var(--border);
     z-index: 1001;
@@ -343,6 +344,7 @@ nav.scrolled {
 /* ===== Hero Section ===== */
 .hero {
     height: 100vh;
+    height: 100dvh;
     position: relative;
     overflow: hidden;
     display: flex;
@@ -1779,6 +1781,7 @@ footer {
     
     .hero {
         min-height: 90vh;
+        min-height: 90dvh;
         height: auto;
     }
 
