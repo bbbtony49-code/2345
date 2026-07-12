@@ -2650,7 +2650,7 @@ footer {
     opacity: 0.75;
 }
 
-/* ===== Luxury Entrance Animation (首次進站動畫) ===== */
+/* ===== Luxury Entrance Animation (自動播放・金光閃耀版) ===== */
 body.entrance-active {
     overflow: hidden;
     height: 100vh;
@@ -2664,6 +2664,62 @@ body.entrance-active {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    background: #050505;
+}
+
+/* 中央深邃暈影，讓金色元素更有聚光燈感 */
+.entrance-vignette {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: radial-gradient(circle at 50% 45%, rgba(255, 210, 77, 0.14) 0%, rgba(10, 10, 10, 0.4) 45%, #050505 78%);
+    opacity: 0;
+    animation: entranceVignetteIn 1.6s var(--ease) 0.1s forwards;
+}
+
+@keyframes entranceVignetteIn {
+    to { opacity: 1; }
+}
+
+/* 金色閃爍粒子 */
+.entrance-sparkles {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.entrance-sparkle {
+    position: absolute;
+    border-radius: 50%;
+    background: radial-gradient(circle, #FFEA95 0%, #D4AF37 60%, transparent 100%);
+    box-shadow: 0 0 6px 1px rgba(255, 210, 77, 0.7);
+    opacity: 0;
+    animation-name: entranceSparkleTwinkle;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes entranceSparkleTwinkle {
+    0%, 100% { opacity: 0; transform: scale(0.4); }
+    50% { opacity: 1; transform: scale(1.15); }
+}
+
+/* 金色光束一閃而過的掃光效果 */
+.entrance-sweep {
+    position: absolute;
+    inset: -20% -60%;
+    z-index: 3;
+    background: linear-gradient(100deg, transparent 42%, rgba(255, 234, 149, 0.55) 50%, transparent 58%);
+    transform: translateX(-120%);
+    animation: entranceSweepMove 2.6s ease-in-out 0.4s infinite;
+    pointer-events: none;
+    mix-blend-mode: screen;
+}
+
+@keyframes entranceSweepMove {
+    0% { transform: translateX(-120%); }
+    45%, 100% { transform: translateX(120%); }
 }
 
 .entrance-curtain {
@@ -2672,126 +2728,154 @@ body.entrance-active {
     bottom: 0;
     width: 50%;
     background: #0a0a0a;
-    z-index: 1;
+    z-index: 4;
     transition: transform 1.1s var(--ease-slow);
 }
 
 .entrance-curtain.left {
     left: 0;
-    box-shadow: 6px 0 30px rgba(255, 210, 77, 0.12);
+    box-shadow: 8px 0 40px rgba(255, 210, 77, 0.18);
 }
 
 .entrance-curtain.right {
     right: 0;
-    box-shadow: -6px 0 30px rgba(255, 210, 77, 0.12);
+    box-shadow: -8px 0 40px rgba(255, 210, 77, 0.18);
 }
 
 .entrance-frame {
     position: relative;
-    z-index: 2;
+    z-index: 5;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.6rem;
+    gap: 0.55rem;
     padding: 2rem;
     text-align: center;
     opacity: 0;
-    animation: entranceFrameIn 1.3s var(--ease) 0.3s forwards;
+    animation: entranceFrameIn 1s var(--ease) 0.15s forwards;
 }
 
 @keyframes entranceFrameIn {
-    from { opacity: 0; transform: translateY(16px); }
+    from { opacity: 0; transform: translateY(10px); }
     to { opacity: 1; transform: translateY(0); }
 }
 
-.entrance-ornament {
+.entrance-glow-ring {
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    margin-left: -100px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255, 210, 77, 0.35) 0%, transparent 70%);
+    opacity: 0;
+    animation: entranceGlowPulse 2.4s ease-in-out 0.2s infinite;
+    pointer-events: none;
+}
+
+@keyframes entranceGlowPulse {
+    0% { opacity: 0; transform: scale(0.8); }
+    50% { opacity: 0.9; transform: scale(1.15); }
+    100% { opacity: 0.3; transform: scale(0.95); }
+}
+
+.entrance-ornament-line {
     width: 1px;
-    height: 36px;
-    background: linear-gradient(180deg, transparent, rgba(255, 210, 77, 0.65), transparent);
-    margin: 0.4rem 0;
+    height: 0;
+    background: linear-gradient(180deg, transparent, rgba(255, 210, 77, 0.8), transparent);
+    animation: entranceLineGrow 0.7s var(--ease) forwards;
+}
+
+.entrance-ornament-line.top {
+    animation-delay: 0.05s;
+    margin-bottom: 0.3rem;
+}
+
+.entrance-ornament-line.bottom {
+    animation-delay: 0.9s;
+    margin-top: 0.3rem;
+}
+
+@keyframes entranceLineGrow {
+    from { height: 0; opacity: 0; }
+    to { height: 34px; opacity: 1; }
 }
 
 .entrance-logo {
-    width: 84px;
-    height: 84px;
+    width: 88px;
+    height: 88px;
     object-fit: contain;
     border-radius: 50%;
-    box-shadow: 0 0 0 1px rgba(255, 210, 77, 0.35), 0 0 45px rgba(255, 210, 77, 0.22);
-    margin-bottom: 0.4rem;
+    box-shadow: 0 0 0 1px rgba(255, 210, 77, 0.45), 0 0 55px rgba(255, 210, 77, 0.35);
+    margin-bottom: 0.3rem;
+    opacity: 0;
+    transform: scale(0.75);
+    animation: entranceLogoIn 0.9s var(--ease) 0.15s forwards;
+    position: relative;
+    z-index: 1;
+}
+
+@keyframes entranceLogoIn {
+    to { opacity: 1; transform: scale(1); }
 }
 
 .entrance-eyebrow {
     font-family: var(--display);
-    letter-spacing: 0.35em;
+    letter-spacing: 0.4em;
     font-size: 0.72rem;
     color: var(--gold);
     text-transform: uppercase;
+    opacity: 0;
+    animation: entranceFadeUp 0.8s var(--ease) 0.55s forwards;
 }
 
 .entrance-brand {
     font-family: var(--brand);
-    font-size: clamp(1.7rem, 5vw, 2.6rem);
+    font-size: clamp(1.9rem, 5.5vw, 2.9rem);
+    letter-spacing: 0.14em;
+    margin: 0.15rem 0;
+    background: linear-gradient(100deg, #C9A227 0%, #FFEA95 25%, #D4AF37 45%, #FFEA95 65%, #C9A227 100%);
+    background-size: 250% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     color: var(--text);
-    letter-spacing: 0.12em;
+    opacity: 0;
+    animation: entranceFadeUp 0.9s var(--ease) 0.65s forwards, entranceShimmer 3.5s linear 1.2s infinite;
+}
+
+@keyframes entranceShimmer {
+    to { background-position: -250% center; }
+}
+
+@keyframes entranceFadeUp {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 .entrance-sub {
     font-size: 0.82rem;
     color: var(--muted);
-    letter-spacing: 0.08em;
-    margin-bottom: 0.8rem;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.2rem;
+    opacity: 0;
+    animation: entranceFadeUp 0.8s var(--ease) 0.85s forwards;
 }
 
-.entrance-enter {
-    position: relative;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.9rem 2.2rem;
-    border-radius: 999px;
-    border: 1px solid rgba(255, 210, 77, 0.5);
-    background: rgba(255, 210, 77, 0.06);
-    color: var(--gold);
-    font-size: 0.76rem;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    cursor: pointer;
-    overflow: visible;
-    transition: all 0.35s var(--ease);
-    min-height: 46px;
-}
-
-.entrance-enter-ring {
-    position: absolute;
-    inset: -7px;
-    border-radius: 999px;
-    border: 1px solid rgba(255, 210, 77, 0.35);
-    animation: entrancePulse 2.4s ease-in-out infinite;
-    pointer-events: none;
-}
-
-@keyframes entrancePulse {
-    0%, 100% { transform: scale(1); opacity: 0.6; }
-    50% { transform: scale(1.08); opacity: 0; }
-}
-
-.entrance-enter:hover,
-.entrance-enter:focus-visible {
-    background: rgba(255, 210, 77, 0.16);
-    box-shadow: 0 10px 30px rgba(255, 210, 77, 0.25);
-    transform: translateY(-2px);
-}
-
-.entrance-enter:active {
-    transform: translateY(0) scale(0.96);
-}
-
+/* ===== 離場：帷幕自動展開，內容金光淡出 ===== */
 .site-entrance.leaving .entrance-frame {
-    animation: entranceFrameOut 0.6s var(--ease) forwards;
+    animation: entranceFrameOut 0.7s var(--ease) forwards;
 }
 
 @keyframes entranceFrameOut {
-    to { opacity: 0; transform: scale(0.94); }
+    to { opacity: 0; transform: scale(1.06); }
+}
+
+.site-entrance.leaving .entrance-vignette,
+.site-entrance.leaving .entrance-sparkles {
+    transition: opacity 0.6s var(--ease);
+    opacity: 0;
 }
 
 .site-entrance.leaving .entrance-curtain.left {
@@ -2808,17 +2892,18 @@ body.entrance-active {
 
 @media (max-width: 768px) {
     .entrance-logo {
-        width: 68px;
-        height: 68px;
+        width: 70px;
+        height: 70px;
+    }
+
+    .entrance-glow-ring {
+        width: 150px;
+        height: 150px;
+        margin-left: -75px;
     }
 
     .entrance-frame {
         padding: 1.2rem;
-        gap: 0.5rem;
-    }
-
-    .entrance-enter {
-        padding: 0.85rem 1.8rem;
-        font-size: 0.72rem;
+        gap: 0.45rem;
     }
 }
