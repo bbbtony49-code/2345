@@ -2564,7 +2564,7 @@ footer {
     margin: 0;
     font-size: 0.92rem;
     line-height: 1.8;
-    color: var(--text-muted, #999);
+    color: var(--muted);
 }
 
 @media (max-width: 768px) {
