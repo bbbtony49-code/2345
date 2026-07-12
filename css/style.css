@@ -2544,10 +2544,13 @@ footer {
 }
 
 .in-depth-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-    padding: 0 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    padding: 0 2.5rem 2.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
 }
 
 .in-depth-item h4 {
@@ -2559,7 +2562,7 @@ footer {
 .in-depth-item p {
     margin: 0;
     font-size: 0.92rem;
-    line-height: 1.7;
+    line-height: 1.8;
     color: var(--text-muted, #999);
 }
 
@@ -2568,8 +2571,8 @@ footer {
         padding: 1.2rem 1.5rem;
     }
     .in-depth-grid {
-        grid-template-columns: 1fr;
-        padding: 0 1.5rem 1.5rem;
+        gap: 1.4rem;
+        padding: 0 1.2rem 1.5rem;
     }
 }
 
@@ -2590,4 +2593,24 @@ footer {
 
 .hero-review-link a:hover {
     border-bottom-color: var(--gold);
+}
+
+/* 主廚精簡標籤(首頁用,詳細內容在chef.html) */
+.chef-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+    margin: 1.5rem 0 2rem;
+}
+
+.chef-tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 1.1rem;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    font-size: 0.82rem;
+    color: var(--text);
+    background: var(--bg);
+    white-space: nowrap;
 }
