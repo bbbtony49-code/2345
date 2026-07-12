@@ -982,11 +982,12 @@ section {
 }
 
 .chef-title {
-    font-size: 0.85rem;
-    color: var(--muted);
-    letter-spacing: 0.2em;
+    font-size: 1.05rem;
+    color: var(--gold);
+    letter-spacing: 0.12em;
     margin-bottom: 3rem;
-    text-transform: uppercase;
+    text-transform: none;
+    font-weight: 600;
     display: block;
 }
 
