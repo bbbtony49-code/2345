@@ -121,7 +121,9 @@ nav.scrolled {
 }
 
 .nav-links {
-    display: none;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
 }
 
 .nav-links a {
@@ -166,7 +168,7 @@ nav.scrolled {
 }
 
 .nav-toggle {
-    display: inline-flex;
+    display: none;
     border: none;
     background: transparent;
     cursor: pointer;
