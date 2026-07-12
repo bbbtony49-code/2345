@@ -40,6 +40,7 @@ body {
     font-family: var(--sans);
     font-weight: 400; /* 從 300 改為 400（更清晰） */
     line-height: 1.9;
+    letter-spacing: 0.02em;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -120,9 +121,7 @@ nav.scrolled {
 }
 
 .nav-links {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
+    display: none;
 }
 
 .nav-links a {
@@ -167,7 +166,7 @@ nav.scrolled {
 }
 
 .nav-toggle {
-    display: none;
+    display: inline-flex;
     border: none;
     background: transparent;
     cursor: pointer;
@@ -619,7 +618,7 @@ nav.scrolled {
 
 /* ===== Sections ===== */
 section {
-    padding: 5.5rem 5%;
+    padding: 6.8rem 5%;
 }
 
 .section-header {
@@ -646,6 +645,7 @@ section {
     font-weight: 400;
     letter-spacing: 0.08em;
     color: var(--text);
+    font-family: var(--serif);
 }
 
 .section-desc {
@@ -2614,4 +2614,14 @@ footer {
     color: var(--text);
     background: var(--bg);
     white-space: nowrap;
+}
+
+/* 卡片副標題:精品命名下方的白話說明,兼顧質感與辨識度 */
+.card-subtitle {
+    display: block;
+    font-size: 0.72rem;
+    color: var(--muted);
+    letter-spacing: 0.05em;
+    margin: 0.2rem 0 0.6rem;
+    opacity: 0.75;
 }
