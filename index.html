@@ -151,6 +151,44 @@ function gtag_report_conversion_line(url) {
 </script>
 </head>
 <body>
+    <!-- ===== 奢華進站動畫 Luxury Entrance ===== -->
+    <div id="siteEntrance" class="site-entrance">
+        <div class="entrance-curtain left"></div>
+        <div class="entrance-curtain right"></div>
+        <div class="entrance-frame">
+            <div class="entrance-ornament"></div>
+            <img src="/assets/images/logo.jpg" alt="舒苑飲食文化" class="entrance-logo" width="84" height="84" loading="eager">
+            <p class="entrance-eyebrow">Luxury Private Chef</p>
+            <h1 class="entrance-brand">舒苑飲食文化</h1>
+            <p class="entrance-sub">私廚王子林東立 ・ 董事長專屬・行動五星級私廚團隊</p>
+            <button id="entranceEnterBtn" class="entrance-enter" type="button" aria-label="點按進入官網">
+                <span class="entrance-enter-ring"></span>
+                <span class="entrance-enter-text">點按進入 ENTER</span>
+            </button>
+            <div class="entrance-ornament"></div>
+        </div>
+    </div>
+    <script>
+        (function () {
+            var entrance = document.getElementById('siteEntrance');
+            if (!entrance) return;
+            if (sessionStorage.getItem('shuyuan_entered') === '1') {
+                entrance.remove();
+                return;
+            }
+            document.body.classList.add('entrance-active');
+            var btn = document.getElementById('entranceEnterBtn');
+            btn.addEventListener('click', function () {
+                if (entrance.classList.contains('leaving')) return;
+                entrance.classList.add('leaving');
+                try { sessionStorage.setItem('shuyuan_entered', '1'); } catch (e) {}
+                setTimeout(function () {
+                    entrance.remove();
+                    document.body.classList.remove('entrance-active');
+                }, 1150);
+            });
+        })();
+    </script>
     <nav id="navbar">
         <a href="index.html" class="logo">
             <img src="/assets/images/logo.jpg" width="1080" height="1080" alt="舒苑飲食文化｜Luxury Private Chef" loading="eager">
