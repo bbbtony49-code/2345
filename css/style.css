@@ -275,7 +275,6 @@ nav.scrolled {
     top: 0;
     width: 280px;
     height: 100vh;
-    height: 100dvh;
     background: var(--bg);
     border-right: 1px solid var(--border);
     z-index: 1001;
@@ -344,7 +343,6 @@ nav.scrolled {
 /* ===== Hero Section ===== */
 .hero {
     height: 100vh;
-    height: 100dvh;
     position: relative;
     overflow: hidden;
     display: flex;
@@ -1781,7 +1779,6 @@ footer {
     
     .hero {
         min-height: 90vh;
-        min-height: 90dvh;
         height: auto;
     }
 
@@ -2486,4 +2483,90 @@ footer {
     color: var(--bg);
     transform: translateY(-3px);
     box-shadow: var(--shadow-gold);
+}
+
+/* In Depth 單一展開全部區塊 */
+.in-depth {
+    margin-top: 3rem;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: var(--bg2);
+    overflow: hidden;
+}
+
+.in-depth summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.in-depth summary::-webkit-details-marker {
+    display: none;
+}
+
+.in-depth-title h3 {
+    margin: 0.3rem 0 0;
+    font-size: 1.2rem;
+}
+
+.in-depth-toggle {
+    flex-shrink: 0;
+    padding: 0.6rem 1.4rem;
+    border: 1px solid var(--gold);
+    border-radius: 999px;
+    color: var(--gold);
+    font-size: 0.9rem;
+    white-space: nowrap;
+    transition: all 0.3s var(--ease);
+}
+
+.in-depth summary:hover .in-depth-toggle {
+    background: var(--gold);
+    color: var(--bg);
+}
+
+.in-depth .toggle-text-open {
+    display: none;
+}
+
+.in-depth[open] .toggle-text-closed {
+    display: none;
+}
+
+.in-depth[open] .toggle-text-open {
+    display: inline;
+}
+
+.in-depth-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding: 0 2rem 2rem;
+}
+
+.in-depth-item h4 {
+    margin: 0 0 0.5rem;
+    font-size: 1rem;
+    color: var(--gold);
+}
+
+.in-depth-item p {
+    margin: 0;
+    font-size: 0.92rem;
+    line-height: 1.7;
+    color: var(--text-muted, #999);
+}
+
+@media (max-width: 768px) {
+    .in-depth summary {
+        padding: 1.2rem 1.5rem;
+    }
+    .in-depth-grid {
+        grid-template-columns: 1fr;
+        padding: 0 1.5rem 1.5rem;
+    }
 }
