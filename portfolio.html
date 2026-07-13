@@ -74,6 +74,15 @@ function gtag_report_conversion_line(url) {
         ]
     }
     </script>
+    <style>
+        .collapsible-showcase{max-width:900px;margin:2.5rem auto 0;text-align:center;}
+        .collapsible-showcase summary{list-style:none;cursor:pointer;display:inline-block;padding:0.9rem 2.2rem;border:1px solid #D4AF37;border-radius:2px;color:#D4AF37;font-family:'Noto Serif TC',serif;letter-spacing:0.05em;transition:all .3s ease;}
+        .collapsible-showcase summary::-webkit-details-marker{display:none;}
+        .collapsible-showcase summary::after{content:'　▼ 點擊展開';font-size:0.8rem;opacity:0.75;}
+        .collapsible-showcase[open] summary::after{content:'　▲ 點擊收合';}
+        .collapsible-showcase summary:hover{background:rgba(212,175,55,0.1);}
+        .collapsible-showcase .showcase-body{margin-top:2.5rem;text-align:left;}
+    </style>
 </head>
 <body>
         <nav id="navbar">
@@ -159,25 +168,18 @@ function gtag_report_conversion_line(url) {
 
     <section>
         <div class="section-header">
-            <span class="section-sub">Real Moments</span>
-            <h2 class="section-title">真實服務實錄</h2>
-            <p class="section-desc">每一組照片都對應一種實際服務場景，從家宴、企業接待到大宴會，讓作品內容更直觀。</p>
+            <span class="section-sub">Real Moments & Food Details</span>
+            <h2 class="section-title">真實服務實錄與料理細節</h2>
+            <p class="section-desc">每一組照片都對應一種實際服務場景，從家宴、企業接待到大宴會；也呈現舒苑對食材、擺盤與成品質感的要求，讓作品內容更直觀、圖片與服務概念不脫節。</p>
         </div>
-        <div class="gallery-grid">
+        <details class="collapsible-showcase">
+            <summary>查看真實服務實錄與料理細節（共 58 張精選作品）</summary>
+            <div class="showcase-body">
+            <div class="gallery-grid">
             <div class="gallery-item"><img src="/assets/images/豪宅家宴美麗的豪宅實境.jpg" width="1108" height="1477" alt="豪宅家宴" loading="lazy"><div class="gallery-caption"><p>豪宅家宴｜私密且精緻的家庭餐宴</p></div></div>
             <div class="gallery-item"><img src="/assets/images/主廚團隊出餐實境.jpg" width="960" height="720" alt="到府私廚出餐" loading="lazy"><div class="gallery-caption"><p>到府私廚｜現場出餐與服務流程</p></div></div>
             <div class="gallery-item"><img src="/assets/images/企業VIP餐桌.jpg" width="1109" height="1479" alt="企業 VIP 餐桌" loading="lazy"><div class="gallery-caption"><p>企業接待｜高級 VIP 餐桌布置</p></div></div>
             <div class="gallery-item"><img src="/assets/images/大型BUFFET外燴活動.jpg" width="1536" height="2048" alt="大型 BUFFET" loading="lazy"><div class="gallery-caption"><p>大型 BUFFET｜百人活動出餐現場</p></div></div>
-        </div>
-    </section>
-
-    <section>
-        <div class="section-header">
-            <span class="section-sub">Food Details</span>
-            <h2 class="section-title">料理細節與食材質感</h2>
-            <p class="section-desc">這些畫面用來呈現舒苑對食材、擺盤與成品質感的要求，避免圖片與服務概念脫節。</p>
-        </div>
-        <div class="gallery-grid">
             <div class="gallery-item"><img src="/assets/images/頂級龍蝦擺盤.jpg" width="1536" height="2048" alt="龍蝦料理擺盤" loading="lazy"><div class="gallery-caption"><p>海鮮主菜｜精緻擺盤與高級食材</p></div></div>
             <div class="gallery-item"><img src="/assets/images/精緻餐桌擺設.jpg" width="1536" height="2048" alt="精緻餐桌" loading="lazy"><div class="gallery-caption"><p>Fine Dining｜完整餐桌氛圍</p></div></div>
             <div class="gallery-item"><img src="/assets/images/嚴選頂級大明蝦.jpg" width="960" height="1248" alt="頂級海鮮食材" loading="lazy"><div class="gallery-caption"><p>食材選品｜頂級海鮮與單點食材</p></div></div>
@@ -232,7 +234,9 @@ function gtag_report_conversion_line(url) {
             <div class="gallery-item"><img src="/assets/images/中式套餐軟殼龍蝦2.jpg" width="1109" height="1479" alt="中式套餐軟殼龍蝦2" loading="lazy"><div class="gallery-caption"><p>中式套餐軟殼龍蝦2</p></div></div>
             <div class="gallery-item"><img src="/assets/images/中式套餐魚主餐 (2).jpg" width="1536" height="2048" alt="中式套餐魚主餐 (2)" loading="lazy"><div class="gallery-caption"><p>中式套餐魚主餐 (2)</p></div></div>
             <div class="gallery-item"><img src="/assets/images/中式套餐魚主餐 (3).jpg" width="1536" height="2048" alt="中式套餐魚主餐 (3)" loading="lazy"><div class="gallery-caption"><p>中式套餐魚主餐 (3)</p></div></div>
-</div>
+            </div>
+            </div>
+        </details>
     </section>
 
     <section class="video-section" style="background: var(--bg2);">

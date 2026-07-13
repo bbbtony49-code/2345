@@ -14,6 +14,18 @@
     <meta name="theme-color" content="#0a0a0a">
     <link rel="stylesheet" href="css/style.css">
     <style>
+        .collapsible-showcase{max-width:900px;margin:2.5rem auto 0;text-align:center;}
+        .collapsible-showcase summary{list-style:none;cursor:pointer;display:inline-block;padding:0.9rem 2.2rem;border:1px solid #D4AF37;border-radius:2px;color:#D4AF37;font-family:'Noto Serif TC',serif;letter-spacing:0.05em;transition:all .3s ease;}
+        .collapsible-showcase summary::-webkit-details-marker{display:none;}
+        .collapsible-showcase summary::after{content:'　▼ 點擊展開';font-size:0.8rem;opacity:0.75;}
+        .collapsible-showcase[open] summary::after{content:'　▲ 點擊收合';}
+        .collapsible-showcase summary:hover{background:rgba(212,175,55,0.1);}
+        .collapsible-showcase .showcase-body{margin-top:2.5rem;text-align:left;}
+        .showcase-category{margin-bottom:2.5rem;}
+        .showcase-category:last-child{margin-bottom:0;}
+        .showcase-category h3.cat-title{color:#D4AF37;font-family:'Noto Serif TC',serif;font-size:1.15rem;margin-bottom:1.2rem;padding-bottom:0.6rem;border-bottom:1px solid var(--border);text-align:center;}
+        .dish-card-img{width:100%;aspect-ratio:4/3;overflow:hidden;border-radius:4px 4px 0 0;}
+        .dish-card-img img{width:100%;height:100%;object-fit:cover;display:block;}
         .pricing-calculator {
             background: var(--bg2);
             border-radius: 8px;
@@ -262,6 +274,40 @@ function gtag_report_conversion_line(url) {
         </div>
     </section>
 
+    <section style="background: var(--bg2); padding: 4rem 5%;">
+        <div class="section-header">
+            <span class="section-sub">作品分類</span>
+            <h2 class="section-title">精選作品分類</h2>
+            <p class="section-desc">一覽舒苑六大作品分類：精緻西式套餐、精緻中式套餐、中式外燴辦桌、大型企業活動、鐵板燒料理與烤肉 BBQ。</p>
+        </div>
+        <div class="grid-4" style="gap: 1.5rem; max-width: 1200px; margin: 0 auto;">
+            <a href="portfolio-western.html" class="media-card">
+                <div class="media-card-image"><img src="/assets/images/西式套餐前菜.jpg" width="610" height="706" alt="精緻西式套餐" loading="lazy"></div>
+                <div class="media-card-content"><span class="media-card-tag">西式作品</span><h3>精緻西式套餐</h3><p>展現西式料理與桌邊服務的高端作品。</p></div>
+            </a>
+            <a href="portfolio-chinese.html" class="media-card">
+                <div class="media-card-image"><img src="/assets/images/中式套餐鮑魚前菜.jpg" width="1536" height="2048" alt="精緻中式套餐" loading="lazy"></div>
+                <div class="media-card-content"><span class="media-card-tag">中式作品</span><h3>精緻中式套餐</h3><p>展示高端中式套餐的精緻宴席風尚。</p></div>
+            </a>
+            <a href="portfolio-banquet.html" class="media-card">
+                <div class="media-card-image"><img src="/assets/images/中式外燴辦桌實境.jpg" width="1280" height="1280" alt="中式外燴辦桌" loading="lazy"></div>
+                <div class="media-card-content"><span class="media-card-tag">辦桌外燴</span><h3>中式外燴辦桌</h3><p>呈現大型辦桌與外燴現場的專業細節。</p></div>
+            </a>
+            <a href="portfolio-corporate.html" class="media-card">
+                <div class="media-card-image"><img src="/assets/images/企業VIP餐桌.jpg" width="1109" height="1479" alt="大型企業活動" loading="lazy"></div>
+                <div class="media-card-content"><span class="media-card-tag">企業接待</span><h3>大型企業活動</h3><p>企業尾牙、記者會與 VIP 接待的作品實例。</p></div>
+            </a>
+            <a href="portfolio-teppanyaki.html" class="media-card">
+                <div class="media-card-image"><img src="/assets/images/主廚鐵板燒實境.jpg" width="1108" height="1306" alt="鐵板燒料理" loading="lazy"></div>
+                <div class="media-card-content"><span class="media-card-tag">現場料理</span><h3>鐵板燒料理</h3><p>現場鐵板燒與私廚桌邊服務的高端作品。</p></div>
+            </a>
+            <a href="portfolio-bbq.html" class="media-card">
+                <div class="media-card-image"><img src="/assets/images/BBQ現場實境.jpg" width="1536" height="2048" alt="烤肉 BBQ" loading="lazy"></div>
+                <div class="media-card-content"><span class="media-card-tag">戶外烤肉</span><h3>烤肉 BBQ</h3><p>戶外烤肉與高端 BBQ 外燴的餐宴作品。</p></div>
+            </a>
+        </div>
+    </section>
+
     <section>
         <div class="content-block">
             <h2 class="section-title">依照您的需求客製報價</h2>
@@ -269,47 +315,115 @@ function gtag_report_conversion_line(url) {
         </div>
     </section>
 
-    <!-- 招牌菜賞析 -->
+    <!-- 招牌菜與作品賞析 -->
     <section style="background: var(--bg2);">
         <div class="content-block">
-            <h2 class="section-title">招牌菜賞析</h2>
-            <p class="content-text">以下精選幾道客戶與媒體屢屢提及的招牌菜色，每一道都會依現場食材狀況與客戶喜好微調，實際出餐內容以主廚當日規劃為準。</p>
-            <div class="grid-3">
-                <div class="media-card">
-                    <div class="media-card-content"><span class="media-card-tag">中式套餐</span><h3>頂級刺參佛跳牆</h3><p>選用大隻頂級刺參，與火腿、干貝、鮑魚等食材一同以陶甕慢燉數小時，湯頭濃郁卻不油膩，刺參吸飽湯汁後軟糯彈牙，是宴客桌上最能展現主廚火候功力的一道菜。</p></div>
+            <h2 class="section-title">招牌菜與作品賞析</h2>
+            <p class="content-text">以下精選幾道客戶與媒體屢屢提及的招牌菜色與作品實境，每一道都會依現場食材狀況與客戶喜好微調，實際出餐內容以主廚當日規劃為準。</p>
+
+            <details class="collapsible-showcase">
+                <summary>展開招牌菜與作品賞析（共 18 道精選菜色）</summary>
+                <div class="showcase-body">
+
+                    <div class="showcase-category">
+                        <h3 class="cat-title">中式套餐</h3>
+                        <div class="grid-3">
+                            <div class="media-card">
+                                <div class="dish-card-img"><img src="/assets/images/中式套餐頂級刺參必放.jpg" alt="頂級刺參佛跳牆" loading="lazy"></div>
+                                <div class="media-card-content"><span class="media-card-tag">中式套餐</span><h3>頂級刺參佛跳牆</h3><p>選用大隻頂級刺參，與火腿、干貝、鮑魚等食材一同以陶甕慢燉數小時，湯頭濃郁卻不油膩，刺參吸飽湯汁後軟糯彈牙，是宴客桌上最能展現主廚火候功力的一道菜。</p></div>
+                            </div>
+                            <div class="media-card">
+                                <div class="dish-card-img"><img src="/assets/images/中式外燴辦桌避風塘大蝦.jpg" alt="避風塘辦桌大蝦" loading="lazy"></div>
+                                <div class="media-card-content"><span class="media-card-tag">中式套餐</span><h3>避風塘辦桌大蝦</h3><p>選用肉質紮實的活蝦，以蒜酥與辣椒快火油炸鎖住鮮甜，起鍋前拌入香酥金蒜與豆豉提香，外殼酥脆、蝦肉彈牙多汁，是辦桌宴席中最快被一掃而空的菜色之一。</p></div>
+                            </div>
+                            <div class="media-card">
+                                <div class="dish-card-img"><img src="/assets/images/中式套餐上湯龍蝦主餐.jpg" alt="上湯波士頓龍蝦" loading="lazy"></div>
+                                <div class="media-card-content"><span class="media-card-tag">中式套餐</span><h3>上湯波士頓龍蝦</h3><p>整隻波士頓龍蝦現點現殺，蝦肉以上湯輕燙保留彈性口感，蝦頭蝦殼另外熬製湯底提鮮，一蝦兩吃的呈現方式，讓賓客同時感受海味的鮮甜與湯品的濃醇。</p></div>
+                            </div>
+                            <div class="media-card">
+                                <div class="dish-card-img"><img src="/assets/images/中式外燴辦桌干貝海參.jpg" alt="干貝海參雙拼" loading="lazy"></div>
+                                <div class="media-card-content"><span class="media-card-tag">中式套餐</span><h3>干貝海參雙拼</h3><p>大顆干貝先煎封表面鎖住甜味，搭配軟嫩海參與時蔬燴煮，一道菜同時呈現海鮮的鮮甜與海參的膠質口感，是宴客套餐中平衡「澎湃感」與「精緻感」的代表作。</p></div>
+                            </div>
+                            <div class="media-card">
+                                <div class="dish-card-img"><img src="/assets/images/中式套餐烤鴨.jpg" alt="脆皮烤鴨" loading="lazy"></div>
+                                <div class="media-card-content"><span class="media-card-tag">中式套餐</span><h3>脆皮烤鴨</h3><p>選用油脂分布均勻的鴨隻，經風乾與炙烤雙重工序，鴨皮酥脆有聲、鴨肉多汁不柴，佐以薄餅、蔥絲與甜麵醬，是家族聚餐與壽宴桌上長輩、晚輩都喜愛的傳統菜色。</p></div>
+                            </div>
+                            <div class="media-card">
+                                <div class="dish-card-img"><img src="/assets/images/中式套餐鮑魚前菜.jpg" alt="頂級鮑魚位上前菜" loading="lazy"></div>
+                                <div class="media-card-content"><span class="media-card-tag">中式套餐</span><h3>頂級鮑魚位上前菜</h3><p>單顆位上鮑魚以老火慢煨入味，切面呈現漂亮的琥珀色澤，搭配少許醬汁提味，作為套餐前菜開場，讓賓客一入座就感受到宴席的規格。</p></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="showcase-category">
+                        <h3 class="cat-title">中式辦桌</h3>
+                        <div class="grid-3">
+                            <div class="media-card">
+                                <div class="dish-card-img"><img src="/assets/images/中式辦桌骰子牛.jpg" alt="骰子和牛炙燒" loading="lazy"></div>
+                                <div class="media-card-content"><span class="media-card-tag">中式辦桌</span><h3>骰子和牛炙燒</h3><p>精選和牛骰子肉塊，以高溫快速炙燒鎖住肉汁，切面呈現粉嫩三分熟狀態，簡單以海鹽與現磨黑胡椒提味，讓和牛本身的油花香氣完整呈現。</p></div>
+                            </div>
+                            <div class="media-card">
+                                <div class="dish-card-img"><img src="/assets/images/中式外燴桌菜牛仔骨.jpg" alt="金沙牛仔骨" loading="lazy"></div>
+                                <div class="media-card-content"><span class="media-card-tag">中式辦桌</span><h3>金沙牛仔骨</h3><p>牛仔骨先低溫慢烤至軟嫩，再以鹹蛋黃裹粉酥炸增添香氣層次，外層金沙酥脆、肉質軟嫩多汁，是辦桌宴席中經常被客戶指定加點的人氣菜色。</p></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="showcase-category">
+                        <h3 class="cat-title">西式套餐</h3>
+                        <div class="grid-3">
+                            <div class="media-card">
+                                <div class="dish-card-img"><img src="/assets/images/中式套餐軟殼龍蝦.jpg" alt="軟殼龍蝦手工麵" loading="lazy"></div>
+                                <div class="media-card-content"><span class="media-card-tag">西式套餐</span><h3>軟殼龍蝦手工麵</h3><p>使用當季軟殼龍蝦整隻酥炸至外殼金黃酥脆，可連殼食用，搭配主廚手工製作的義大利麵與自製醬汁，呈現中西合璧的創意宴客料理。</p></div>
+                            </div>
+                            <div class="media-card">
+                                <div class="dish-card-img"><img src="/assets/images/主廚料理教學實錄海鮮燉飯.jpg" alt="松露燉飯" loading="lazy"></div>
+                                <div class="media-card-content"><span class="media-card-tag">西式套餐</span><h3>松露燉飯</h3><p>以高湯緩慢熬煮米芯至恰好的彈牙口感，起鍋前拌入奶油與帕瑪森起司，最後現刨黑松露提香，濃郁的乳香與松露香氣交織，是西式套餐中的人氣主食選項。</p></div>
+                            </div>
+                            <div class="media-card">
+                                <div class="dish-card-img"><img src="/assets/images/西式套餐主餐帝王蟹.jpg" alt="香煎帝王蟹主餐" loading="lazy"></div>
+                                <div class="media-card-content"><span class="media-card-tag">西式套餐</span><h3>香煎帝王蟹主餐</h3><p>選用大顆帝王蟹腳肉，煎封表面鎖住蟹肉鮮甜，搭配奶油白酒醬汁提味，蟹肉本身的甘甜與海味在簡單調味下完整呈現，是西式套餐中最受歡迎的海鮮主餐之一。</p></div>
+                            </div>
+                            <div class="media-card">
+                                <div class="dish-card-img"><img src="/assets/images/西式套餐龍蝦主餐.jpg" alt="波士頓龍蝦主餐" loading="lazy"></div>
+                                <div class="media-card-content"><span class="media-card-tag">西式套餐</span><h3>波士頓龍蝦主餐</h3><p>西式做法著重呈現龍蝦肉本身的彈性與甜度，以奶油香煎或水波方式烹調，搭配時蔬與醬汁點綴，擺盤精緻，是西式套餐中份量感與精緻度兼具的主餐選項。</p></div>
+                            </div>
+                            <div class="media-card">
+                                <div class="dish-card-img"><img src="/assets/images/西式套餐牛排主餐可放很美.jpg" alt="頂級和牛牛排" loading="lazy"></div>
+                                <div class="media-card-content"><span class="media-card-tag">西式套餐</span><h3>頂級和牛牛排</h3><p>精選頂級和牛部位，以簡單鹽烤方式處理，讓油花香氣與肉質軟嫩度完整呈現，切面粉嫩多汁，是西式套餐中最能展現食材規格的主餐之一。</p></div>
+                            </div>
+                            <div class="media-card">
+                                <div class="dish-card-img"><img src="/assets/images/西式羊排主餐很美可放.jpg" alt="香煎法式羊排" loading="lazy"></div>
+                                <div class="media-card-content"><span class="media-card-tag">西式套餐</span><h3>香煎法式羊排</h3><p>選用優質羊排，煎烤至外酥內嫩，搭配香料奶油與紅酒醬汁，去除腥羶味的同時保留羊肉特有的香氣層次，是喜歡嘗鮮賓客的熱門選擇。</p></div>
+                            </div>
+                            <div class="media-card">
+                                <div class="dish-card-img"><img src="/assets/images/西式套餐鴨胸飯.jpg" alt="油封鴨胸佐野莓醬" loading="lazy"></div>
+                                <div class="media-card-content"><span class="media-card-tag">西式套餐</span><h3>油封鴨胸佐野莓醬</h3><p>鴨胸皮面煎至金黃酥脆，肉質保留粉嫩多汁口感，搭配酸甜野莓醬汁平衡油脂香氣，是西式套餐中兼具視覺與味覺層次的主餐選項。</p></div>
+                            </div>
+                            <div class="media-card">
+                                <div class="dish-card-img"><img src="/assets/images/西式套餐烤生蠔照片很美可放.jpg" alt="現烤生蠔佐檸檬奶油醬" loading="lazy"></div>
+                                <div class="media-card-content"><span class="media-card-tag">西式套餐</span><h3>現烤生蠔佐檸檬奶油醬</h3><p>精選日本生蠔現場炙烤，搭配檸檬奶油醬與香草提香，保留生蠔本身的海味與飽滿肉質，是套餐前菜中很能炒熱氣氛的一道菜。</p></div>
+                            </div>
+                            <div class="media-card">
+                                <div class="dish-card-img"><img src="/assets/images/西式料理套餐軟殼蟹.jpg" alt="香煎軟殼蟹佐時蔬沙拉" loading="lazy"></div>
+                                <div class="media-card-content"><span class="media-card-tag">西式套餐</span><h3>香煎軟殼蟹佐時蔬沙拉</h3><p>軟殼蟹煎至外殼金黃酥脆、蟹肉多汁，搭配當季時蔬沙拉與清爽油醋醬，口感層次豐富又不失清爽，適合作為套餐中段的銜接菜色。</p></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="showcase-category">
+                        <h3 class="cat-title">鐵板燒</h3>
+                        <div class="grid-3">
+                            <div class="media-card">
+                                <div class="dish-card-img"><img src="/assets/images/主廚鐵板燒實境.jpg" alt="到府鐵板燒現場秀" loading="lazy"></div>
+                                <div class="media-card-content"><span class="media-card-tag">鐵板燒</span><h3>到府鐵板燒現場秀</h3><p>主廚攜帶專業鐵板設備到府，現場高溫快炒海鮮、和牛與時蔬，鑊氣十足的香氣與現場表演感，特別適合生日宴、企業接待等需要「儀式感」的場合。</p></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="content-text" style="margin-top:1.5rem; font-size:0.85rem; color:#999;">※ 以上菜色僅為招牌參考，實際菜單會依季節食材、客戶預算與飲食需求全數客製化設計，不侷限於上述選項。</p>
                 </div>
-                <div class="media-card">
-                    <div class="media-card-content"><span class="media-card-tag">中式套餐</span><h3>避風塘辦桌大蝦</h3><p>選用肉質紮實的活蝦，以蒜酥與辣椒快火油炸鎖住鮮甜，起鍋前拌入香酥金蒜與豆豉提香，外殼酥脆、蝦肉彈牙多汁，是辦桌宴席中最快被一掃而空的菜色之一。</p></div>
-                </div>
-                <div class="media-card">
-                    <div class="media-card-content"><span class="media-card-tag">中式套餐</span><h3>上湯波士頓龍蝦</h3><p>整隻波士頓龍蝦現點現殺，蝦肉以上湯輕燙保留彈性口感，蝦頭蝦殼另外熬製湯底提鮮，一蝦兩吃的呈現方式，讓賓客同時感受海味的鮮甜與湯品的濃醇。</p></div>
-                </div>
-                <div class="media-card">
-                    <div class="media-card-content"><span class="media-card-tag">中式套餐</span><h3>干貝海參雙拼</h3><p>大顆干貝先煎封表面鎖住甜味，搭配軟嫩海參與時蔬燴煮，一道菜同時呈現海鮮的鮮甜與海參的膠質口感，是宴客套餐中平衡「澎湃感」與「精緻感」的代表作。</p></div>
-                </div>
-                <div class="media-card">
-                    <div class="media-card-content"><span class="media-card-tag">中式套餐</span><h3>脆皮烤鴨</h3><p>選用油脂分布均勻的鴨隻，經風乾與炙烤雙重工序，鴨皮酥脆有聲、鴨肉多汁不柴，佐以薄餅、蔥絲與甜麵醬，是家族聚餐與壽宴桌上長輩、晚輩都喜愛的傳統菜色。</p></div>
-                </div>
-                <div class="media-card">
-                    <div class="media-card-content"><span class="media-card-tag">中式套餐</span><h3>頂級鮑魚位上前菜</h3><p>單顆位上鮑魚以老火慢煨入味，切面呈現漂亮的琥珀色澤，搭配少許醬汁提味，作為套餐前菜開場，讓賓客一入座就感受到宴席的規格。</p></div>
-                </div>
-                <div class="media-card">
-                    <div class="media-card-content"><span class="media-card-tag">中式辦桌</span><h3>骰子和牛炙燒</h3><p>精選和牛骰子肉塊，以高溫快速炙燒鎖住肉汁，切面呈現粉嫩三分熟狀態，簡單以海鹽與現磨黑胡椒提味，讓和牛本身的油花香氣完整呈現。</p></div>
-                </div>
-                <div class="media-card">
-                    <div class="media-card-content"><span class="media-card-tag">中式辦桌</span><h3>金沙牛仔骨</h3><p>牛仔骨先低溫慢烤至軟嫩，再以鹹蛋黃裹粉酥炸增添香氣層次，外層金沙酥脆、肉質軟嫩多汁，是辦桌宴席中經常被客戶指定加點的人氣菜色。</p></div>
-                </div>
-                <div class="media-card">
-                    <div class="media-card-content"><span class="media-card-tag">西式套餐</span><h3>軟殼龍蝦手工麵</h3><p>使用當季軟殼龍蝦整隻酥炸至外殼金黃酥脆，可連殼食用，搭配主廚手工製作的義大利麵與自製醬汁，呈現中西合璧的創意宴客料理。</p></div>
-                </div>
-                <div class="media-card">
-                    <div class="media-card-content"><span class="media-card-tag">西式套餐</span><h3>松露燉飯</h3><p>以高湯緩慢熬煮米芯至恰好的彈牙口感，起鍋前拌入奶油與帕瑪森起司，最後現刨黑松露提香，濃郁的乳香與松露香氣交織，是西式套餐中的人氣主食選項。</p></div>
-                </div>
-                <div class="media-card">
-                    <div class="media-card-content"><span class="media-card-tag">鐵板燒</span><h3>到府鐵板燒現場秀</h3><p>主廚攜帶專業鐵板設備到府，現場高溫快炒海鮮、和牛與時蔬，鑊氣十足的香氣與現場表演感，特別適合生日宴、企業接待等需要「儀式感」的場合。</p></div>
-                </div>
-            </div>
-            <p class="content-text" style="margin-top:1.5rem; font-size:0.85rem; color:#999;">※ 以上菜色僅為招牌參考，實際菜單會依季節食材、客戶預算與飲食需求全數客製化設計，不侷限於上述選項。</p>
+            </details>
         </div>
     </section>
 
