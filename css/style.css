@@ -1784,18 +1784,21 @@ footer {
     }
 
     .logo-text {
-        font-size: 0.62rem;
-        letter-spacing: 0.04em;
-        max-width: 118px;
+        font-size: 0.6rem;
+        letter-spacing: 0.03em;
+        max-width: 92px;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
         display: block;
     }
 
-    /* 常駐 EN 按鈕在手機版隱藏，選單裡已有 EN 連結，避免頁首擁擠 */
+    /* EN 中英文切換：放在漢堡按鈕旁邊，手機版縮小尺寸避免擁擠 */
     .lang-switch {
-        display: none;
+        display: inline-block;
+        font-size: 0.6rem;
+        padding: 0.25rem 0.5rem;
+        margin-right: 0;
     }
 
     body {
@@ -3020,5 +3023,10 @@ body.entrance-active {
     .nav-cta {
         padding: 0.45rem 0.6rem;
         font-size: 0.6rem;
+    }
+
+    .lang-switch {
+        padding: 0.2rem 0.4rem;
+        font-size: 0.55rem;
     }
 }
