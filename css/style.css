@@ -934,6 +934,12 @@ section {
 }
 
 /* ===== Chef Section ===== */
+.reviews-widget-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
 .chef-eeat {
     background: var(--bg2);
 }
