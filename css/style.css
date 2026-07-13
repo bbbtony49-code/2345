@@ -941,16 +941,30 @@ section {
 .chef-layout {
     display: grid;
     grid-template-columns: 1fr 1.2fr;
+    grid-template-areas:
+        "image heading"
+        "image content";
     gap: 6rem;
     align-items: center;
     max-width: 1300px;
     margin: 0 auto;
 }
 
+.chef-heading {
+    grid-area: heading;
+    align-self: end;
+}
+
 .chef-image {
+    grid-area: image;
     position: relative;
     overflow: hidden;
     aspect-ratio: 4/5;
+}
+
+.chef-content {
+    grid-area: content;
+    align-self: start;
 }
 
 .chef-image img {
@@ -1708,7 +1722,15 @@ footer {
     
     .chef-layout {
         grid-template-columns: 1fr;
-        gap: 3rem;
+        grid-template-areas:
+            "heading"
+            "image"
+            "content";
+        gap: 1.5rem;
+    }
+
+    .chef-heading {
+        text-align: center;
     }
     
     .footer-top {
