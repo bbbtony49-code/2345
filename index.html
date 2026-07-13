@@ -151,6 +151,23 @@ function gtag_report_conversion_line(url) {
 </script>
 </head>
 <body>
+    <!-- ===== 奢華進站動畫 Luxury Entrance (自動播放・金光閃耀版) ===== -->
+    <div id="siteEntrance" class="site-entrance">
+        <div class="entrance-curtain left"></div>
+        <div class="entrance-curtain right"></div>
+        <div class="entrance-vignette"></div>
+        <div class="entrance-sparkles" id="entranceSparkles"></div>
+        <div class="entrance-sweep"></div>
+        <div class="entrance-frame">
+            <div class="entrance-glow-ring"></div>
+            <div class="entrance-ornament-line top"></div>
+            <img src="/assets/images/logo.jpg" alt="舒苑飲食文化" class="entrance-logo" width="88" height="88" loading="eager">
+            <p class="entrance-eyebrow">Luxury Private Chef</p>
+            <h1 class="entrance-brand">舒苑飲食文化</h1>
+            <p class="entrance-sub">私廚王子林東立 ・ 董事長專屬・行動五星級私廚團隊</p>
+            <div class="entrance-ornament-line bottom"></div>
+        </div>
+    </div>
     <nav id="navbar">
         <a href="index.html" class="logo">
             <img src="/assets/images/logo.jpg" width="1080" height="1080" alt="舒苑飲食文化｜Luxury Private Chef" loading="eager">
@@ -209,30 +226,69 @@ function gtag_report_conversion_line(url) {
 
     <script>
         (function () {
-            var box = document.getElementById('fireflies');
-            if (!box) return;
-            var count = window.innerWidth < 768 ? 14 : 26;
-            for (var i = 0; i < count; i++) {
-                var f = document.createElement('span');
-                f.className = 'firefly';
-                f.style.left = (Math.random() * 100) + '%';
-                f.style.top = (30 + Math.random() * 65) + '%';
-                var size = 3 + Math.random() * 4;
-                f.style.width = size + 'px';
-                f.style.height = size + 'px';
-                f.style.setProperty('--dx', (Math.random() * 80 - 40) + 'px');
-                f.style.setProperty('--dy', (-(40 + Math.random() * 60)) + 'px');
-                f.style.animationDelay = (Math.random() * 1.2) + 's';
-                f.style.animationDuration = (3.4 + Math.random() * 1.8) + 's';
-                box.appendChild(f);
+            var fireflyBox = document.getElementById('fireflies');
+
+            function startFireflies() {
+                if (!fireflyBox) return;
+                var count = window.innerWidth < 768 ? 14 : 26;
+                for (var i = 0; i < count; i++) {
+                    var f = document.createElement('span');
+                    f.className = 'firefly';
+                    f.style.left = (Math.random() * 100) + '%';
+                    f.style.top = (30 + Math.random() * 65) + '%';
+                    var size = 3 + Math.random() * 4;
+                    f.style.width = size + 'px';
+                    f.style.height = size + 'px';
+                    f.style.setProperty('--dx', (Math.random() * 80 - 40) + 'px');
+                    f.style.setProperty('--dy', (-(40 + Math.random() * 60)) + 'px');
+                    f.style.animationDelay = (Math.random() * 1.2) + 's';
+                    f.style.animationDuration = (3.4 + Math.random() * 1.8) + 's';
+                    fireflyBox.appendChild(f);
+                }
+                setTimeout(function () {
+                    fireflyBox.classList.add('fireflies-fade');
+                }, 5000);
+                setTimeout(function () {
+                    fireflyBox.remove();
+                }, 6200);
             }
-            // 演出約 5 秒後，螢火蟲整體緩緩淡出並移除
+
+            var entrance = document.getElementById('siteEntrance');
+            if (!entrance || sessionStorage.getItem('shuyuan_entered') === '1') {
+                if (entrance) entrance.remove();
+                startFireflies();
+                return;
+            }
+
+            document.body.classList.add('entrance-active');
+            try { sessionStorage.setItem('shuyuan_entered', '1'); } catch (e) {}
+
+            // 產生金色閃爍粒子
+            var sparkleBox = document.getElementById('entranceSparkles');
+            var sparkleCount = window.innerWidth < 768 ? 22 : 40;
+            for (var i = 0; i < sparkleCount; i++) {
+                var s = document.createElement('span');
+                s.className = 'entrance-sparkle';
+                s.style.left = (Math.random() * 100) + '%';
+                s.style.top = (Math.random() * 100) + '%';
+                var sSize = 2 + Math.random() * 3;
+                s.style.width = sSize + 'px';
+                s.style.height = sSize + 'px';
+                s.style.animationDelay = (Math.random() * 2.2) + 's';
+                s.style.animationDuration = (1.6 + Math.random() * 1.8) + 's';
+                sparkleBox.appendChild(s);
+            }
+
+            // 自動播放序列：短暫停留欣賞後，帷幕自動展開進入首頁，同步啟動螢火蟲
             setTimeout(function () {
-                box.classList.add('fireflies-fade');
-            }, 5000);
+                entrance.classList.add('leaving');
+                startFireflies();
+            }, 2200);
+
             setTimeout(function () {
-                box.remove();
-            }, 6200);
+                entrance.remove();
+                document.body.classList.remove('entrance-active');
+            }, 3300);
         })();
     </script>
 
