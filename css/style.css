@@ -642,13 +642,13 @@ nav.scrolled {
 
 /* ===== Sections ===== */
 section {
-    padding: 6.8rem 5%;
+    padding: 5.2rem 5%;
 }
 
 .section-header {
     text-align: center;
     max-width: 900px;
-    margin: 0 auto 3.5rem;
+    margin: 0 auto 2.6rem;
 }
 
 .section-sub {
@@ -675,13 +675,13 @@ section {
 .section-desc {
     color: var(--muted);
     font-size: 1rem;
-    line-height: 2;
+    line-height: 1.8;
 }
 
 /* ===== Intro Block ===== */
 .intro-block {
     background: var(--bg);
-    padding: 6rem 5%;
+    padding: 4.5rem 5%;
 }
 
 .intro-container {
@@ -693,8 +693,8 @@ section {
 .intro-text {
     color: var(--text);
     font-size: 1.05rem;
-    line-height: 2.2;
-    margin-bottom: 2rem;
+    line-height: 1.85;
+    margin-bottom: 1.5rem;
     text-align: center;
 }
 
@@ -1040,9 +1040,9 @@ section {
 
 .chef-content p {
     color: var(--text);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
     font-size: 1rem;
-    line-height: 2.2;
+    line-height: 1.85;
 }
 
 .chef-content p strong {
@@ -1199,8 +1199,8 @@ section {
 .menu-card p {
     font-size: 0.95rem;
     color: var(--muted);
-    line-height: 2;
-    margin-bottom: 1.5rem;
+    line-height: 1.75;
+    margin-bottom: 1.2rem;
 }
 
 .menu-card .price {
@@ -1387,7 +1387,7 @@ section {
     padding: 0 2rem 2rem;
     color: var(--muted);
     font-size: 0.95rem;
-    line-height: 2;
+    line-height: 1.75;
 }
 
 /* ===== Articles Section ===== */
@@ -1564,9 +1564,9 @@ footer {
 .footer-brand p {
     color: #E0E0E0;
     font-size: 0.95rem;
-    margin-top: 1.5rem;
+    margin-top: 1.2rem;
     max-width: 400px;
-    line-height: 2.2;
+    line-height: 1.8;
 }
 
 .footer-col h4 {
@@ -1896,7 +1896,7 @@ footer {
     }
 
     section {
-        padding: 3.2rem 5%;
+        padding: 2.8rem 5%;
     }
     
     .trust-grid {
@@ -2092,8 +2092,8 @@ footer {
 .review-text {
     color: var(--text);
     font-size: 1rem;
-    line-height: 2;
-    margin-bottom: 2rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
 }
 
 .review-author {
@@ -2528,8 +2528,8 @@ footer {
 .content-text {
     color: var(--text);
     font-size: 1.05rem;
-    line-height: 2.2;
-    margin-bottom: 1.75rem;
+    line-height: 1.85;
+    margin-bottom: 1.4rem;
 }
 
 .content-text strong {
