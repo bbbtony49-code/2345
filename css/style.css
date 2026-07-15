@@ -1268,6 +1268,56 @@ section {
     text-transform: uppercase;
 }
 
+/* ===== Region Accordion（服務地區收合） ===== */
+.region-accordion {
+    max-width: 640px;
+    margin: 0 auto;
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    transition: all 0.4s var(--ease);
+}
+
+.region-accordion[open] {
+    max-width: 1200px;
+    border-color: var(--gold);
+}
+
+.region-accordion summary {
+    padding: 1.1rem 2rem;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+    font-family: var(--sans);
+    font-size: 0.95rem;
+    letter-spacing: 0.08em;
+    color: var(--gold);
+    text-align: center;
+}
+
+.region-accordion summary::-webkit-details-marker {
+    display: none;
+}
+
+.region-accordion summary::after {
+    content: '+';
+    font-size: 1.3rem;
+    color: var(--gold);
+    transition: transform 0.3s;
+}
+
+.region-accordion[open] summary::after {
+    transform: rotate(45deg);
+}
+
+.region-accordion .region-grid {
+    padding: 0.5rem 2rem 2rem;
+    margin: 0;
+    max-width: none;
+}
+
 /* ===== FAQ Section ===== */
 .faq-preview {
     background: var(--bg2);
@@ -1863,12 +1913,29 @@ footer {
         gap: 1.6rem;
     }
     
-    .hero-btns,
     .cta-buttons {
         flex-direction: column;
         align-items: center;
         width: 100%;
         gap: 0.8rem;
+    }
+
+    /* 首頁 Hero 兩個按鈕：手機版維持左右並排，不要上下堆疊 */
+    .hero-btns {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        width: 100%;
+        gap: 0.5rem;
+    }
+
+    .hero-btns .btn {
+        flex: 1 1 0;
+        max-width: 168px;
+        padding: 0.6rem 0.6rem;
+        font-size: 0.62rem;
+        letter-spacing: 0.08em;
+        white-space: nowrap;
     }
     
     .btn {
@@ -1877,6 +1944,18 @@ footer {
         text-align: center;
         padding: 0.65rem 1.3rem;
         font-size: 0.84rem;
+    }
+
+    /* 主廚姓名區塊：手機版字體縮小，避免佔滿畫面 */
+    .chef-name {
+        font-size: 1.5rem;
+        letter-spacing: 0.12em;
+        line-height: 1.4;
+    }
+
+    .chef-signature {
+        font-size: 1.15rem;
+        margin-bottom: 1.4rem;
     }
     
     .hero {
