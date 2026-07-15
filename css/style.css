@@ -2613,6 +2613,15 @@ footer {
     line-height: 1.8;
 }
 
+/* 招牌菜與作品賞析：照片比例不一，改為完整顯示不裁切，多餘空間以底色補滿 */
+.showcase-body .media-card-image {
+    background: var(--bg);
+}
+
+.showcase-body .media-card-image img {
+    object-fit: contain;
+}
+
 .card {
     background: var(--bg2);
     border: 1px solid var(--border-light);
