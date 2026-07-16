@@ -3352,3 +3352,54 @@ body.entrance-active {
         font-size: 0.55rem;
     }
 }
+
+/* ===== 品牌數據列 ===== */
+.brand-stats {
+    padding: 3rem 1.5rem;
+}
+.brand-stats-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+}
+.brand-stats-grid .stat-item {
+    padding: 0 1.5rem;
+    border-right: 1px solid var(--border-light);
+}
+.brand-stats-grid .stat-item:last-child {
+    border-right: none;
+}
+.brand-stats-grid .stat-number {
+    font-family: var(--display);
+    font-style: italic;
+    font-size: 3rem;
+    color: var(--gold);
+    line-height: 1;
+    display: block;
+}
+.brand-stats-grid .stat-number.is-text {
+    font-size: 2.1rem;
+}
+.brand-stats-grid .stat-label {
+    font-family: var(--sans);
+    font-size: 0.78rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-top: 0.6rem;
+    display: block;
+}
+@media (max-width: 768px) {
+    .brand-stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem 0;
+    }
+    .brand-stats-grid .stat-item {
+        border-right: none;
+    }
+    .brand-stats-grid .stat-item:nth-child(odd) {
+        border-right: 1px solid var(--border-light);
+    }
+}
