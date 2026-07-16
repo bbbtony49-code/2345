@@ -2207,6 +2207,60 @@ footer {
     }
 }
 
+/* ===== Single Video Feature (video beside text, not stacked full-width) ===== */
+.video-feature {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.video-feature-text {
+    flex: 1;
+    min-width: 0;
+}
+
+.video-feature-text .section-header {
+    text-align: left;
+    max-width: none;
+    margin: 0 0 1.5rem;
+}
+
+.video-feature-text .section-cta {
+    text-align: left;
+    margin-top: 1.75rem;
+}
+
+.video-feature-media {
+    flex: 0 0 340px;
+    width: 340px;
+}
+
+.video-feature-media .video-wrapper {
+    width: 100%;
+    max-width: none !important;
+    margin: 0 !important;
+}
+
+@media (max-width: 900px) {
+    .video-feature {
+        flex-direction: column;
+        gap: 1.75rem;
+    }
+    .video-feature-text .section-header {
+        text-align: center;
+    }
+    .video-feature-text .section-cta {
+        text-align: center;
+    }
+    .video-feature-media {
+        width: 100%;
+        max-width: 340px;
+        flex: 0 0 auto;
+    }
+}
+
 /* ===== Photo Gallery (portfolio real photos) ===== */
 .gallery-grid {
     display: grid;
