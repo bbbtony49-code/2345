@@ -3473,3 +3473,13 @@ body.entrance-active {
     line-height: 1.7;
     margin-bottom: 1.75rem;
 }
+
+/* ===== 品牌數據列標題 ===== */
+.brand-stats-title {
+    text-align: center;
+    font-family: var(--display);
+    font-style: italic;
+    font-size: 1.6rem;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+}
