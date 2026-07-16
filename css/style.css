@@ -371,7 +371,7 @@ nav.scrolled {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url('/assets/images/台中最頂級七期豪宅.jpg') center/cover no-repeat;
+    background: url('/assets/images/台中最頂級七期豪宅.webp') center/cover no-repeat;
     background-color: transparent;
 }
 
@@ -2651,7 +2651,7 @@ footer {
 /* ===== CTA Section (before footer, all pages) ===== */
 .cta-section {
     background: linear-gradient(rgba(10,10,10,0.88), rgba(10,10,10,0.92)),
-                url('/assets/images/精緻餐桌擺設.jpg') center/cover fixed;
+                url('/assets/images/精緻餐桌擺設.webp') center/cover fixed;
     text-align: center;
     padding: 7rem 5%;
 }
