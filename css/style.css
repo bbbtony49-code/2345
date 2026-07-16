@@ -2161,6 +2161,7 @@ footer {
 /* ===== Video Section ===== */
 .video-section {
     background: var(--bg);
+    padding: 3.5rem 5%;
 }
 
 .video-grid {
