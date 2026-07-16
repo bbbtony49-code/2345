@@ -3447,3 +3447,29 @@ body.entrance-active {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+/* ===== 社團邀請區塊 ===== */
+.community-cta {
+    padding: 3.5rem 1.5rem;
+    background: var(--bg3);
+    border-top: 1px solid var(--border-light);
+    border-bottom: 1px solid var(--border-light);
+    text-align: center;
+}
+.community-cta .community-inner {
+    max-width: 700px;
+    margin: 0 auto;
+}
+.community-cta h2 {
+    font-family: var(--display);
+    font-style: italic;
+    font-size: 2.2rem;
+    color: var(--gold);
+    margin-bottom: 0.75rem;
+}
+.community-cta p {
+    color: var(--muted);
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 1.75rem;
+}
