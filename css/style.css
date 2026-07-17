@@ -3483,3 +3483,39 @@ body.entrance-active {
     color: var(--text-secondary);
     margin-bottom: 2rem;
 }
+
+/* ===== 麵包屑導覽 Breadcrumb Nav ===== */
+.breadcrumb-nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0.9rem 2rem;
+    font-size: 0.82rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.4rem;
+    color: var(--muted);
+    background: var(--bg2);
+    border-bottom: 1px solid var(--border-light);
+}
+.breadcrumb-nav a {
+    color: var(--muted);
+    text-decoration: none;
+    transition: color 0.25s var(--ease);
+}
+.breadcrumb-nav a:hover {
+    color: var(--gold);
+}
+.breadcrumb-nav .breadcrumb-sep {
+    color: var(--border);
+    opacity: 0.8;
+}
+.breadcrumb-nav .breadcrumb-current {
+    color: var(--gold-light);
+}
+@media (max-width: 768px) {
+    .breadcrumb-nav {
+        padding: 0.7rem 1.2rem;
+        font-size: 0.76rem;
+    }
+}
