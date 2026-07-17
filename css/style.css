@@ -3486,6 +3486,10 @@ body.entrance-active {
 
 /* ===== 麵包屑導覽 Breadcrumb Nav ===== */
 .breadcrumb-nav {
+    position: static;
+    top: auto;
+    left: auto;
+    width: auto;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0.9rem 2rem;
@@ -3497,6 +3501,7 @@ body.entrance-active {
     color: var(--muted);
     background: var(--bg2);
     border-bottom: 1px solid var(--border-light);
+    z-index: 1;
 }
 .breadcrumb-nav a {
     color: var(--muted);
