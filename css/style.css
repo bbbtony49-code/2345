@@ -298,6 +298,7 @@ nav.scrolled {
     top: 0;
     width: 280px;
     height: 100vh;
+    height: 100dvh;
     background: var(--bg);
     border-right: 1px solid var(--border);
     z-index: 1001;
@@ -366,6 +367,7 @@ nav.scrolled {
 /* ===== Hero Section ===== */
 .hero {
     height: 100vh;
+    height: 100dvh;
     position: relative;
     overflow: hidden;
     display: flex;
@@ -1847,7 +1849,7 @@ footer {
         width: auto;
         text-align: center;
         padding: 0.5rem 0.85rem;
-        font-size: 0.68rem;
+        font-size: 0.78rem;
         white-space: nowrap;
         flex-shrink: 0;
     }
@@ -1884,7 +1886,7 @@ footer {
     /* EN 中英文切換：放在漢堡按鈕旁邊，手機版縮小尺寸避免擁擠 */
     .lang-switch {
         display: inline-block;
-        font-size: 0.6rem;
+        font-size: 0.75rem;
         padding: 0.25rem 0.5rem;
         margin-right: 0;
     }
@@ -3072,6 +3074,7 @@ footer {
 body.entrance-active {
     overflow: hidden;
     height: 100vh;
+    height: 100dvh;
 }
 
 .site-entrance {
