@@ -235,7 +235,7 @@
 <url>
 <loc>https://shuyuan-chef.com/portfolio.html</loc>
 <video:video>
-<video:thumbnail_loc>https://shuyuan-chef.com/assets/images/video-poster-kitchen.webp</video:thumbnail_loc>
+<video:thumbnail_loc>https://shuyuan-chef.com/assets/images/video-posters/hundred-guest-buffet.jpg</video:thumbnail_loc>
 <video:title>百人自助式餐點實錄</video:title>
 <video:description>對應大型 BUFFET 與活動外燴，呈現高規格餐宴如何在大規模場景中順暢執行。</video:description>
 <video:content_loc>https://shuyuan-chef.com/assets/videos/hundred-guest-buffet.mp4</video:content_loc>
@@ -244,7 +244,7 @@
 <video:family_friendly>yes</video:family_friendly>
 </video:video>
 <video:video>
-<video:thumbnail_loc>https://shuyuan-chef.com/assets/images/video-poster-kitchen.webp</video:thumbnail_loc>
+<video:thumbnail_loc>https://shuyuan-chef.com/assets/images/video-posters/banquet-table-setting.jpg</video:thumbnail_loc>
 <video:title>餐宴餐桌布置與氛圍</video:title>
 <video:description>對應企業接待、VIP 餐宴與高端宴席，重點在餐桌與場域統一質感。</video:description>
 <video:content_loc>https://shuyuan-chef.com/assets/videos/banquet-table-setting.mp4</video:content_loc>
@@ -301,9 +301,9 @@
 <url>
 <loc>https://shuyuan-chef.com/private-chef.html</loc>
 <video:video>
-<video:thumbnail_loc>https://shuyuan-chef.com/assets/images/video-poster-banquet.webp</video:thumbnail_loc>
-<video:title>到府私廚現場實錄</video:title>
-<video:description>親眼見證主廚團隊從準備到現場出餐的高端服務流程。</video:description>
+<video:thumbnail_loc>https://shuyuan-chef.com/assets/images/video-posters/chef-team-service-record.jpg</video:thumbnail_loc>
+<video:title>主廚團隊出餐實錄</video:title>
+<video:description>對應到府私廚與現場料理，清楚展現主廚團隊的出菜流程。</video:description>
 <video:content_loc>https://shuyuan-chef.com/assets/videos/chef-team-service-record.mp4</video:content_loc>
 <video:duration>13</video:duration>
 <video:publication_date>2026-07-15</video:publication_date>
