@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 <url>
-<loc>https://shuyuan-chef.com/areas-miaoli.html</loc>
+<loc>https://shuyuan-chef.com/private-chef-miaoli.html</loc>
 <video:video>
 <video:thumbnail_loc>https://shuyuan-chef.com/assets/images/video-posters/miaoli-4day-catering.jpg</video:thumbnail_loc>
 <video:title>苗栗四天四夜私廚外燴實錄</video:title>
@@ -265,10 +265,10 @@
 <url>
 <loc>https://shuyuan-chef.com/private-chef-newtaipei.html</loc>
 <video:video>
-<video:thumbnail_loc>https://shuyuan-chef.com/assets/images/video-posters/private-chef-hotel-record.jpg</video:thumbnail_loc>
+<video:thumbnail_loc>https://shuyuan-chef.com/assets/images/video-posters/client-dining-experience.jpg</video:thumbnail_loc>
 <video:title>私廚團隊飯店級服務實錄</video:title>
 <video:description>新北地區到府服務同樣維持飯店等級的專業與細緻度，讓每一場餐宴都值得信賴。</video:description>
-<video:content_loc>https://shuyuan-chef.com/assets/videos/private-chef-hotel-record.mp4</video:content_loc>
+<video:content_loc>https://shuyuan-chef.com/assets/videos/client-dining-experience.mp4</video:content_loc>
 <video:duration>71</video:duration>
 <video:publication_date>2026-07-15</video:publication_date>
 <video:family_friendly>yes</video:family_friendly>
