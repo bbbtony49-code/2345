@@ -1,28 +1,19 @@
-SHUYUAN Website Update - Footer Redesign + Homepage Fix
-==========================================================
+全站健檢修正 — 套用方式
 
-IMPORTANT: This package fixes a mistake from the previous batch - the
-homepage's brand story section had reverted back to the old version.
-This package corrects that AND adds the new footer redesign.
+本次修正檔案共 16 個：
+1. sitemap.xml                  → 補上 chef-credentials.html 條目
+2. en/index.html                → 縮短過長的 title 標籤
+3. 其餘 14 個頁面                → 補齊/精簡 meta description（原本 6-10字太短，或163字超長）
+   corporate-catering-menu.html / private-chef-price.html / taipei-private-chef.html
+   areas-yilan.html / private-chef-faq.html / menu-30.html / areas-taoyuan.html
+   areas-hsinchu.html / areas-newtaipei.html / areas-taichung.html
+   corporate-catering-price.html / yearend-catering.html / areas-taipei.html
+   private-chef-menu.html / areas-miaoli.html
 
-What's in this package:
-- All HTML pages (root + blog/) - footer redesigned with brand
-  manifesto, credential badges, and a "Popular Searches" keyword
-  link section for extra internal linking (root pages only, not blog)
-- index.html - homepage now correctly has BOTH the brand story section
-  AND the new footer
-- css/style.css - includes all styling for hero, footer, lang switch
-- en/index.html - English homepage with matching footer update
-- deploy.ps1 - PowerShell deploy script
+【操作方式：PowerShell，在 repo 根目錄執行】
 
-How to use (PowerShell):
-1. Unzip this package
-2. Copy ALL extracted files/folders into your repo folder, overwriting
-   files with the same name
-3. Open PowerShell, cd into your repo folder
-4. Run:
-     .\deploy.ps1
-5. Confirm when asked (y), and it will git add / commit / push automatically
-
-Note: blog/ pages use a simpler footer template and were not included
-in the footer redesign this round - can be done separately if wanted.
+Expand-Archive -Path "$env:USERPROFILE\Downloads\seo-fixes.zip" -DestinationPath "$env:USERPROFILE\Downloads\seo-fixes" -Force
+Copy-Item "$env:USERPROFILE\Downloads\seo-fixes\delivery2\*" "." -Recurse -Force
+git add sitemap.xml en/index.html corporate-catering-menu.html private-chef-price.html taipei-private-chef.html areas-yilan.html private-chef-faq.html menu-30.html areas-taoyuan.html areas-hsinchu.html areas-newtaipei.html areas-taichung.html corporate-catering-price.html yearend-catering.html areas-taipei.html private-chef-menu.html areas-miaoli.html
+git commit -m "SEO修正：補齊meta description、修正過長title、sitemap補入新頁面"
+git push
