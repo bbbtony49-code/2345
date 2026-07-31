@@ -57,6 +57,15 @@
 <video:publication_date>2026-07-15</video:publication_date>
 <video:family_friendly>yes</video:family_friendly>
 </video:video>
+<video:video>
+<video:thumbnail_loc>https://shuyuan-chef.com/assets/images/video-posters/private-chef-hotel-record.jpg</video:thumbnail_loc>
+<video:title>到府私廚飯店級實錄</video:title>
+<video:description>到府服務現場同樣維持飯店級標準，從擺盤到上菜，每個細節都不打折。</video:description>
+<video:content_loc>https://shuyuan-chef.com/assets/videos/private-chef-hotel-record.mp4</video:content_loc>
+<video:duration>71</video:duration>
+<video:publication_date>2026-07-15</video:publication_date>
+<video:family_friendly>yes</video:family_friendly>
+</video:video>
 </url>
 <url>
 <loc>https://shuyuan-chef.com/corporate-catering-afternoontea.html</loc>
