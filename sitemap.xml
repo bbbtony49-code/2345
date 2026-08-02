@@ -526,11 +526,6 @@
 <priority>0.5</priority>
 </url>
 <url>
-<loc>https://shuyuan-chef.com/menu-japanese.html</loc>
-<lastmod>2026-08-02</lastmod>
-<priority>0.5</priority>
-</url>
-<url>
 <loc>https://shuyuan-chef.com/menu-vegan.html</loc>
 <lastmod>2026-07-20</lastmod>
 <priority>0.5</priority>
@@ -544,6 +539,11 @@
 <loc>https://shuyuan-chef.com/menu-western.html</loc>
 <lastmod>2026-07-22</lastmod>
 <priority>0.5</priority>
+</url>
+<url>
+<loc>https://shuyuan-chef.com/menu-japanese.html</loc>
+<lastmod>2026-08-02</lastmod>
+<priority>0.6</priority>
 </url>
 <url>
 <loc>https://shuyuan-chef.com/menu.html</loc>
