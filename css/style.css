@@ -3527,3 +3527,25 @@ body.entrance-active {
         font-size: 0.76rem;
     }
 }
+
+/* ===== 手機版卡片長文字排版優化 ===== */
+/* 針對證照/聘書等圖片+長文字說明的卡片，手機上收緊行距與字級，避免文字區塊顯得冗長，同時保留完整內容 */
+@media (max-width: 600px) {
+    .card-with-img .card-top-img {
+        aspect-ratio: 3 / 2;
+    }
+    .card-with-img .card-text {
+        padding: 1.1rem 1.3rem 1.4rem;
+    }
+    .card-with-img .card-text p,
+    .hub-card p {
+        font-size: 0.88rem;
+        line-height: 1.55;
+        margin-bottom: 0.75rem;
+    }
+    .card-with-img .card-text h3,
+    .hub-card h3 {
+        font-size: 1.08rem;
+        margin-bottom: 0.5rem;
+    }
+}
