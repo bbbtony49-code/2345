@@ -1,4 +1,17 @@
 User-agent: *
 Allow: /
+
+# AI 搜尋引擎爬蟲（ChatGPT / Perplexity / Claude / Google AI Overviews）
+User-agent: GPTBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+
 Sitemap: https://shuyuan-chef.com/sitemap.xml
 Sitemap: https://shuyuan-chef.com/video-sitemap.xml
