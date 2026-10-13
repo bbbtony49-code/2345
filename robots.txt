@@ -13,5 +13,13 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
+# 搜尋與引用型 AI 爬蟲(明確允許;上方 User-agent: * 已全部放行)
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: Claude-SearchBot
+Allow: /
+User-agent: Perplexity-User
+Allow: /
+
 Sitemap: https://shuyuan-chef.com/sitemap.xml
 Sitemap: https://shuyuan-chef.com/video-sitemap.xml
