@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://shuyuan-chef.com/</loc>
-<lastmod>2026-07-22</lastmod>
+<lastmod>2026-10-27</lastmod>
 <priority>1.0</priority>
 </url>
 <url>
@@ -377,7 +377,7 @@
 </url>
 <url>
 <loc>https://shuyuan-chef.com/family-banquet-cases.html</loc>
-<lastmod>2026-08-18</lastmod>
+<lastmod>2026-10-27</lastmod>
 <priority>0.8</priority>
 </url>
 <url>
@@ -552,7 +552,7 @@
 </url>
 <url>
 <loc>https://shuyuan-chef.com/menu-western.html</loc>
-<lastmod>2026-08-18</lastmod>
+<lastmod>2026-10-27</lastmod>
 <priority>0.5</priority>
 </url>
 <url>
@@ -597,7 +597,7 @@
 </url>
 <url>
 <loc>https://shuyuan-chef.com/portfolio-western.html</loc>
-<lastmod>2026-08-19</lastmod>
+<lastmod>2026-10-27</lastmod>
 <priority>0.5</priority>
 </url>
 <url>
@@ -657,7 +657,7 @@
 </url>
 <url>
 <loc>https://shuyuan-chef.com/private-chef-cases.html</loc>
-<lastmod>2026-07-20</lastmod>
+<lastmod>2026-10-27</lastmod>
 <priority>0.8</priority>
 </url>
 <url>
@@ -692,7 +692,7 @@
 </url>
 <url>
 <loc>https://shuyuan-chef.com/private-chef-taoyuan.html</loc>
-<lastmod>2026-07-17</lastmod>
+<lastmod>2026-10-27</lastmod>
 <priority>0.8</priority>
 </url>
 <url>
@@ -1364,5 +1364,10 @@
 <loc>https://shuyuan-chef.com/blog/history-of-eel-cuisine.html</loc>
 <lastmod>2026-10-11</lastmod>
 <priority>0.5</priority>
+</url>
+<url>
+<loc>https://shuyuan-chef.com/case-taoyuan-birthday-omakase.html</loc>
+<lastmod>2026-10-27</lastmod>
+<priority>0.7</priority>
 </url>
 </urlset>
