@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://shuyuan-chef.com/</loc>
-<lastmod>2026-10-31</lastmod>
+<lastmod>2026-11-01</lastmod>
 <priority>1.0</priority>
 </url>
 <url>
@@ -27,7 +27,7 @@
 </url>
 <url>
 <loc>https://shuyuan-chef.com/case-construction-banquet.html</loc>
-<lastmod>2026-09-18</lastmod>
+<lastmod>2026-11-01</lastmod>
 <priority>0.7</priority>
 </url>
 <url>
@@ -332,7 +332,7 @@
 </url>
 <url>
 <loc>https://shuyuan-chef.com/corporate-catering-cases.html</loc>
-<lastmod>2026-08-18</lastmod>
+<lastmod>2026-11-01</lastmod>
 <priority>0.8</priority>
 </url>
 <url>
@@ -582,7 +582,7 @@
 </url>
 <url>
 <loc>https://shuyuan-chef.com/portfolio-corporate.html</loc>
-<lastmod>2026-09-18</lastmod>
+<lastmod>2026-11-01</lastmod>
 <priority>0.5</priority>
 </url>
 <url>
@@ -727,7 +727,7 @@
 </url>
 <url>
 <loc>https://shuyuan-chef.com/vip-banquet-cases.html</loc>
-<lastmod>2026-10-28</lastmod>
+<lastmod>2026-11-01</lastmod>
 <priority>0.8</priority>
 </url>
 <url>
@@ -1383,6 +1383,11 @@
 <url>
 <loc>https://shuyuan-chef.com/case-taichung-qiqi-birthday-25-guests.html</loc>
 <lastmod>2026-10-31</lastmod>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://shuyuan-chef.com/case-presale-center-banquet-20-guests.html</loc>
+<lastmod>2026-11-01</lastmod>
 <priority>0.7</priority>
 </url>
 </urlset>
