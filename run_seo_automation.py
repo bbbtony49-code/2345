@@ -72,7 +72,7 @@ UNIFIED_FOOTER = '''    <footer>
         <div class="footer-top">
             <div class="footer-brand">
                 <span class="logo">舒苑飲食文化</span>
-                <p>私廚王子林東立領軍，提供台北到府私廚、企業外燴、VIP餐宴與豪宅家宴。600+ 場高端實績。</p>
+                <p>私廚王子林東立領軍，提供台北到府私廚、企業外燴、VIP餐宴與豪宅家宴。1,000+ 場高端實績。</p>
             </div>
             <div class="footer-col">
                 <h4>到府私廚</h4>
