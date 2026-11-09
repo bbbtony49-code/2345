@@ -26,9 +26,10 @@ nav#navbar { gap: 1rem; }
 .logo img { filter: grayscale(1) sepia(1) saturate(2.4) brightness(1.15) contrast(1.05); }
 
 @media (max-width: 1240px) { .logo-en { display: none; } }
-@media (max-width: 1100px) { .nav-links a { padding: .5rem .55rem; font-size: .8rem; letter-spacing: .06em; } }
+@media (max-width: 1100px) { .nav-links a { padding: .5rem .45rem; font-size: .78rem; letter-spacing: .04em; } .logo-text { display: none; } }
+@media (min-width: 769px) and (max-width: 1100px) { nav#navbar { gap: .5rem; padding-left: 3%; padding-right: 3%; } .nav-cta { padding: .55rem .8rem; letter-spacing: .08em; } }
 @media (max-width: 768px) {
-    .logo-text { font-size: .8rem; max-width: none; letter-spacing: .06em; }
+    .logo-text { font-size: .8rem; max-width: 150px; overflow: hidden; text-overflow: ellipsis; letter-spacing: .06em; }
     .nav-links a { white-space: normal; padding: .85rem 1rem; }
 }
 

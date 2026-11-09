@@ -1,0 +1,50 @@
+/* ===== 舒苑 Premium｜全站共用（導覽列與標題質感）===== */
+html { scroll-behavior: smooth; }
+::selection { background: rgba(255,210,77,.35); color: #fff; }
+/* 1. 導覽列：不換行、去掉厚重膠囊，改成細緻金線 */
+nav#navbar { gap: 1rem; }
+.logo { flex-shrink: 0; }
+.logo-text { white-space: nowrap; font-size: .88rem; letter-spacing: .12em; }
+.logo-en { opacity: .75; }
+.nav-links { gap: .15rem; flex-wrap: nowrap; }
+.nav-links a {
+    white-space: nowrap;
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0;
+    padding: .55rem .8rem;
+    font-size: .84rem;
+    letter-spacing: .1em;
+}
+.nav-links a:hover, .nav-links a.active {
+    background: transparent; box-shadow: none; transform: none; color: var(--gold);
+}
+.nav-links a.sidebar-lang { display: none; }
+.nav-cta { white-space: nowrap; padding: .6rem 1.2rem; font-size: .78rem; letter-spacing: .18em; }
+.lang-switch { white-space: nowrap; }
+
+/* Logo 單色金調，與黑金配色一致 */
+.logo img { filter: grayscale(1) sepia(1) saturate(2.4) brightness(1.15) contrast(1.05); }
+
+@media (max-width: 1240px) { .logo-en { display: none; } }
+@media (max-width: 1100px) { .nav-links a { padding: .5rem .45rem; font-size: .78rem; letter-spacing: .04em; } .logo-text { display: none; } }
+@media (min-width: 769px) and (max-width: 1100px) { nav#navbar { gap: .5rem; padding-left: 3%; padding-right: 3%; } .nav-cta { padding: .55rem .8rem; letter-spacing: .08em; } }
+@media (max-width: 768px) {
+    .logo-text { font-size: .8rem; max-width: 150px; overflow: hidden; text-overflow: ellipsis; letter-spacing: .06em; }
+    .nav-links a { white-space: normal; padding: .85rem 1rem; }
+}
+
+
+/* 置中區塊標題：金色細線與細字距 */
+.section-header .section-sub { display: inline-flex; align-items: center; gap: 1rem; letter-spacing: .4em; }
+.section-header .section-sub::before, .section-header .section-sub::after {
+    content: ""; width: 36px; height: 1px; background: linear-gradient(90deg, transparent, var(--gold-dark));
+}
+.section-header .section-sub::after { transform: scaleX(-1); }
+.section-header .section-title { font-weight: 300; letter-spacing: .12em; position: relative; padding-bottom: 1.4rem; }
+.section-header .section-title::after {
+    content: ""; position: absolute; left: 50%; bottom: 0; width: 56px; height: 1px; transform: translateX(-50%);
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+.card, .media-card, .case-card { transition: transform .4s var(--ease), box-shadow .4s var(--ease), border-color .4s; }
+.card:hover, .case-card:hover { transform: translateY(-4px); box-shadow: 0 18px 40px rgba(0,0,0,.35); }
