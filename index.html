@@ -324,6 +324,30 @@
         "@type": "Answer",
         "text": "只需 5 步驟：1. 加入 LINE 或來電諮詢 2. 主廚討論需求與預算 3. 確認專屬菜單與報價 4. 主廚團隊到府料理 5. 餐後清潔整理。全程專人協助，輕鬆完成預約。"
       }
+    },
+    {
+      "@type": "Question",
+      "name": "到府私廚價格大約多少？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "舒苑 6–8 人小型家宴 NT$38,000 起、10–15 人企業宴席 NT$48,000 起、VIP 頂級餐宴 NT$68,000 起、20 人以上大型活動 NT$180,000 以上。實際金額依人數、菜單規格、場地與服務形式報價。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "舒苑到府私廚服務哪些縣市？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "提供台北、新北、桃園、新竹、苗栗、台中、宜蘭、高雄等 8 縣市到府私廚與企業外燴服務，其他縣市與離島可專案安排。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "到府私廚要提前多久預約？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "一般場次建議提前 7–14 天，旺季與節慶建議提前 1 個月以上，指定主廚建議提前 2–4 週；尾牙春酒旺季（11 月至隔年 1 月）建議提前 1–2 個月。"
+      }
     }
   ]
 }
@@ -358,6 +382,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Noto+Serif+TC:wght@300;400&family=Noto+Sans+TC:wght@300;400&family=Dancing+Script:wght@400&family=LXGW+WenKai+TC:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css?v=5">
+    <link rel="stylesheet" href="css/premium.css?v=1">
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-2P9MZY1F46"></script>
 <script>
@@ -393,6 +418,63 @@ function gtag_report_conversion_line(url) {
     return false;
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "舒苑飲食文化 到府私廚服務地區",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "台北到府私廚",
+      "url": "https://shuyuan-chef.com/private-chef-taipei.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "新北到府私廚",
+      "url": "https://shuyuan-chef.com/private-chef-newtaipei.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "桃園到府私廚",
+      "url": "https://shuyuan-chef.com/private-chef-taoyuan.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "新竹到府私廚",
+      "url": "https://shuyuan-chef.com/private-chef-hsinchu.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "name": "苗栗到府私廚",
+      "url": "https://shuyuan-chef.com/private-chef-miaoli.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "name": "台中到府私廚",
+      "url": "https://shuyuan-chef.com/private-chef-taichung.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 7,
+      "name": "宜蘭到府私廚",
+      "url": "https://shuyuan-chef.com/private-chef-yilan.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 8,
+      "name": "高雄到府私廚",
+      "url": "https://shuyuan-chef.com/private-chef-kaohsiung.html"
+    }
+  ]
+}
+</script>
 </head>
 <body>
     <!-- ===== 奢華進站動畫 Luxury Entrance (自動播放・金光閃耀版) ===== -->
@@ -415,7 +497,7 @@ function gtag_report_conversion_line(url) {
     <nav id="navbar">
         <a href="index.html" class="logo">
             <img src="/assets/images/logo.webp" width="1080" height="1080" alt="舒苑飲食文化｜Luxury Private Chef" loading="eager">
-            <span class="logo-text">舒苑飲食文化｜Luxury Private Chef</span>
+            <span class="logo-text">舒苑飲食文化<span class="logo-en">｜Luxury Private Chef</span></span>
         </a>
         <div class="nav-links">
             <a href="index.html" class="active">首頁</a>
@@ -457,7 +539,8 @@ function gtag_report_conversion_line(url) {
             <p class="hero-manifesto">從一道菜，到一場宴會。</p>
             <h1 class="hero-title">舒苑飲食文化｜Luxury Private Chef</h1>
             <h2 class="hero-subtitle">台北到府私廚外燴、宴會整合服務、董事長餐宴、VIP 餐宴首選</h2>
-            <p class="hero-desc">舒苑由主廚林東立領軍，20 年餐飲資歷、10 年以上頂級私廚外燴經驗、1,000+ 場高端實績，將台灣料理的精神與五星級 Fine Dining 的講究，帶進每一場重要的餐桌。除了到府私廚，也整合花藝、酒水侍酒、音響、主持人與私人管家，一站式統籌從<a href="private-chef.html" style="color:var(--gold);">到府私廚</a>到<a href="event-integration.html" style="color:var(--gold);">完整宴會</a>的每個細節——從董事長宴請、企業品牌餐會，到豪宅私人宴會，每一場都為那個場合而生。 精緻私廚與尊榮服務，是舒苑每一場到府料理的標準：菜單為單一場合量身設計，主廚團隊現場烹調、全程服務，並以保密原則處理賓客資訊。</p>
+            <p class="hero-desc">20 年餐飲資歷、10 年以上頂級私廚經驗，提供台北、桃園、台中等 8 縣市私廚到府服務，把五星級 Fine Dining 的講究，帶進每一場重要的餐桌。</p>
+            <ul class="hero-trust"><li>金帽獎主廚</li><li>1,000+ 場實績</li><li>8 縣市到府</li><li>Google 53 則評價</li></ul>
             <div class="hero-btns">
                 <a href="tel:0911247783" onclick="return gtag_report_conversion_phone('tel:0911247783');" class="btn btn-solid">立即預約來電</a>
                 <a href="https://lin.ee/Tns33CH" onclick="return gtag_report_conversion_line('https://lin.ee/Tns33CH');" class="btn" target="_blank" rel="noopener">LINE快速諮詢</a>
@@ -498,7 +581,8 @@ function gtag_report_conversion_line(url) {
             }
 
             var entrance = document.getElementById('siteEntrance');
-            if (!entrance || sessionStorage.getItem('shuyuan_entered') === '1') {
+            var fromSearch = /(google|bing|yahoo|duckduckgo)\./i.test(document.referrer || '');
+            if (!entrance || fromSearch || sessionStorage.getItem('shuyuan_entered') === '1') {
                 if (entrance) entrance.remove();
                 startFireflies();
                 return;
@@ -527,12 +611,12 @@ function gtag_report_conversion_line(url) {
             setTimeout(function () {
                 entrance.classList.add('leaving');
                 startFireflies();
-            }, 2200);
+            }, 1500);
 
             setTimeout(function () {
                 entrance.remove();
                 document.body.classList.remove('entrance-active');
-            }, 3300);
+            }, 2400);
         })();
     </script>
 
@@ -554,6 +638,8 @@ function gtag_report_conversion_line(url) {
                 <h2 class="section-title">從宴會廳廚房，到專屬私廚餐桌</h2>
             </div>
             <p class="intro-text">林東立主廚的料理啟蒙，來自宴會廳廚房的凌晨備料聲——那段歲月讓他明白：一場好的餐宴，從來不只是「把菜煮好」，而是理解每一場相聚背後的意義。這也是舒苑的品牌 DNA：把辦桌實戰經驗，與 Fine Dining 的細膩講究，融合成專屬於台灣高端場合的私廚語言。</p>
+            <p class="intro-text">舒苑由主廚林東立領軍，累計 1,000+ 場高端實績。除了到府私廚，也整合花藝、酒水侍酒、音響、主持人與私人管家，一站式統籌從<a href="private-chef.html" style="color:var(--gold);">到府私廚</a>到<a href="event-integration.html" style="color:var(--gold);">完整宴會</a>的每個細節——從董事長宴請、企業品牌餐會，到豪宅私人宴會，每一場都為那個場合而生。</p>
+            <p class="intro-text">精緻私廚與尊榮服務，是舒苑每一場到府料理的標準：菜單為單一場合量身設計，主廚團隊現場烹調、全程服務，並以保密原則處理賓客資訊。
             <p class="intro-text">到府私廚（Private Chef）是將五星級 Fine Dining 體驗，直接帶到您指定地點的服務——主廚團隊攜帶食材與專業器具現場料理，提供絕對的隱私與不受打擾的專屬用餐氛圍。無論是 6 人的私密聚餐，還是 120 人的企業尾牙，舒苑都提供一條龍的尊榮服務，從菜單設計到餐後清潔，每個環節都經嚴格把關。</p>
         </div>
     </section>
@@ -785,7 +871,7 @@ function gtag_report_conversion_line(url) {
             <p class="section-desc">真實執行案例展示舒苑在董事長宴、尾牙、豪宅生日宴、遊艇餐宴、私人飛機餐點、精緻下午茶等高端場域的頂級執行力。</p>
         </div>
         <div class="cases-grid">
-            <a href="case-presale-center-banquet-20-guests.html" class="case-card">
+<a href="case-presale-center-banquet-20-guests.html" class="case-card">
                 <div class="case-image">
                     <span class="case-tag">建設公司接待中心餐宴・20位賓客</span>
                     <span class="case-date">2026 / 09</span>
@@ -793,8 +879,7 @@ function gtag_report_conversion_line(url) {
                 </div>
                 <div class="case-content"><h3>建設公司接待中心20位賓客餐宴</h3><p>協助行銷公司辦理建設公司接待中心餐宴，讓業務與客戶在餐桌上交流，從龍蝦、魚排到鮑魚飯。</p></div>
             </a>
-
-            <a href="case-taichung-qiqi-birthday-25-guests.html" class="case-card">
+<a href="case-taichung-qiqi-birthday-25-guests.html" class="case-card">
                 <div class="case-image">
                     <span class="case-tag">台中七期・中式慶生餐宴</span>
                     <span class="case-date">2026 / 09</span>
@@ -802,16 +887,14 @@ function gtag_report_conversion_line(url) {
                 </div>
                 <div class="case-content"><h3>台中七期25位賓客中式慶生餐宴</h3><p>主廚團隊在七期現場備料與出餐，從前菜、海鮮、肉品到湯品與主食，打造專屬的私人餐宴。</p></div>
             </a>
-
-            <a href="case-teppanyaki-private-chef-5-guests.html" class="case-card">
+<a href="case-teppanyaki-private-chef-5-guests.html" class="case-card">
                 <div class="case-image">
                     <span class="case-tag">鐵板燒私廚・5位賓客</span>
                     <img src="/assets/images/teppan-5-guests-lobster-plating.webp" width="1108" height="777" alt="鐵板燒私廚餐宴案例：主廚檯邊擺盤龍蝦料理" loading="lazy">
                 </div>
                 <div class="case-content"><h3>鐵板燒私廚餐宴・5位賓客</h3><p>主廚在鐵板檯前現場料理，從鮮鮑魚、干貝到牛排與龍蝦，近距離呈現每一道料理。</p></div>
             </a>
-
-            <a href="case-yacht-birthday-30-guests.html" class="case-card">
+<a href="case-yacht-birthday-30-guests.html" class="case-card">
                 <div class="case-image">
                     <span class="case-tag">遊艇私廚・生日派對</span>
                     <span class="case-date">2026 / 09</span>
@@ -819,8 +902,7 @@ function gtag_report_conversion_line(url) {
                 </div>
                 <div class="case-content"><h3>30位貴賓遊艇私廚餐宴</h3><p>從岸上前置製作、冷藏運送，到上船復熱與現場烹調擺盤，主廚團隊完成整場遊艇生日派對。</p></div>
             </a>
-
-            <a href="case-taoyuan-birthday-omakase.html" class="case-card">
+<a href="case-taoyuan-birthday-omakase.html" class="case-card">
                 <div class="case-image">
                     <span class="case-tag">桃園生日餐宴・無菜單料理</span>
                     <span class="case-date">2026 / 09</span>
@@ -828,8 +910,7 @@ function gtag_report_conversion_line(url) {
                 </div>
                 <div class="case-content"><h3>桃園生日餐宴無菜單料理</h3><p>5位賓客、10道現場料理，從肥肝、松露到現剖海膽法式嫩蛋，主廚一人完成整場生日晚宴。</p></div>
             </a>
-
-            <a href="case-presale-center-vip.html" class="case-card">
+<a href="case-presale-center-vip.html" class="case-card">
                 <div class="case-image">
                     <span class="case-tag">預售屋接待中心・建設公司VIP</span>
                     <span class="case-date">2026 / 09</span>
@@ -837,7 +918,10 @@ function gtag_report_conversion_line(url) {
                 </div>
                 <div class="case-content"><h3>預售屋接待中心VIP餐宴</h3><p>建設公司長期合作VIP客戶餐宴，主廚現場料理搭配精緻擺盤，讓重要貴賓被好好款待。</p></div>
             </a>
-            <a href="case-taipei-vip-clubhouse.html" class="case-card">
+</div>
+<details class="cases-more"><summary>展開更多案例（另 13 則）</summary>
+<div class="cases-grid">
+<a href="case-taipei-vip-clubhouse.html" class="case-card">
                 <div class="case-image">
                     <span class="case-tag">台北頂級私人招待所</span>
                     <span class="case-date">2026 / 08</span>
@@ -845,7 +929,7 @@ function gtag_report_conversion_line(url) {
                 </div>
                 <div class="case-content"><h3>台北頂級招待所到府私廚外燴</h3><p>200多坪頂級私人招待所VIP餐宴，中西合璧菜色從魚子醬前菜到中式快炒，全程現場烹調客製。</p></div>
             </a>
-            <a href="case-taichung-japanese.html" class="case-card">
+<a href="case-taichung-japanese.html" class="case-card">
                 <div class="case-image">
                     <span class="case-tag">台中到府私廚日料</span>
                     <span class="case-date">2026 / 08</span>
@@ -853,7 +937,7 @@ function gtag_report_conversion_line(url) {
                 </div>
                 <div class="case-content"><h3>台中到府私廚日料｜日式無菜單料理案例</h3><p>台中私人住宅日式割烹宴席，生食級海膽、龍蝦佐黑松露與現切生魚片盛合完整呈現。</p></div>
             </a>
-            <a href="chef-media.html" class="case-card">
+<a href="chef-media.html" class="case-card">
                 <div class="case-image">
                     <span class="case-tag">農業部漁業署・雲林縣政府</span>
                     <span class="case-date">2026 / 08</span>
@@ -861,7 +945,7 @@ function gtag_report_conversion_line(url) {
                 </div>
                 <div class="case-content"><h3>雲林好魚・夏日好食光｜父親節漁獲推廣</h3><p>受農業部漁業署與雲林縣政府邀請，主廚現場設計蒲燒鰻魚鯛魚法式吐司，並獲民視新聞報導。</p></div>
             </a>
-            <a href="case-fathers-day-family.html" class="case-card">
+<a href="case-fathers-day-family.html" class="case-card">
                 <div class="case-image">
                     <span class="case-tag">少董父親節家宴</span>
                     <span class="case-date">2026 / 08</span>
@@ -869,7 +953,7 @@ function gtag_report_conversion_line(url) {
                 </div>
                 <div class="case-content"><h3>少董父親節家宴</h3><p>豪宅圓桌家宴，龍蝦魚子醬佐精緻手切冷盤，中西合璧的父親節餐宴案例。</p></div>
             </a>
-            <a href="case-corporate-executive-banquet.html" class="case-card">
+<a href="case-corporate-executive-banquet.html" class="case-card">
                 <div class="case-image">
                     <span class="case-tag">勤誠興業主管餐宴</span>
                     <span class="case-date">2026 / 08</span>
@@ -877,7 +961,7 @@ function gtag_report_conversion_line(url) {
                 </div>
                 <div class="case-content"><h3>勤誠興業主管餐宴</h3><p>景觀餐廳頂級BUFFET，中西式冷熱菜色搭配香檳迎賓的企業主管餐宴案例。</p></div>
             </a>
-            <a href="case-baby-zhuazhou.html" class="case-card">
+<a href="case-baby-zhuazhou.html" class="case-card">
                 <div class="case-image">
                     <span class="case-tag">豪宅寶寶抓周到府鐵板燒</span>
                     <span class="case-date">2026 / 08</span>
@@ -885,7 +969,7 @@ function gtag_report_conversion_line(url) {
                 </div>
                 <div class="case-content"><h3>豪宅寶寶抓周到府鐵板燒</h3><p>台北豪宅社區寶寶周歲抓周宴客製化餐宴案例。</p></div>
             </a>
-            <a href="case-ceo-dinner.html" class="case-card">
+<a href="case-ceo-dinner.html" class="case-card">
                 <div class="case-image">
                     <span class="case-tag">董事長宴請</span>
                     <span class="case-date">2026 / 08</span>
@@ -893,7 +977,7 @@ function gtag_report_conversion_line(url) {
                 </div>
                 <div class="case-content"><h3>董事長宴請</h3><p>高階董事長宴請，打造尊榮私密餐宴。</p></div>
             </a>
-            <a href="case-yacht.html" class="case-card">
+<a href="case-yacht.html" class="case-card">
                 <div class="case-image">
                     <span class="case-tag">遊艇餐宴</span>
                     <span class="case-date">2026 / 08</span>
@@ -901,7 +985,7 @@ function gtag_report_conversion_line(url) {
                 </div>
                 <div class="case-content"><h3>遊艇餐宴</h3><p>私人遊艇上的高端精緻餐飲服務。</p></div>
             </a>
-            <a href="case-yacht.html" class="case-card">
+<a href="case-yacht.html" class="case-card">
                 <div class="case-image">
                     <span class="case-tag">遊艇私廚</span>
                     <span class="case-date">2026 / 08</span>
@@ -909,7 +993,7 @@ function gtag_report_conversion_line(url) {
                 </div>
                 <div class="case-content"><h3>煙火節・遊艇包船實例</h3><p>煙火節限定包船，海上現場料理，主廚親自完成擺盤。</p></div>
             </a>
-            <a href="case-opening.html" class="case-card">
+<a href="case-opening.html" class="case-card">
                 <div class="case-image">
                     <span class="case-tag">企業品牌活動</span>
                     <span class="case-date">2026 / 08</span>
@@ -917,7 +1001,7 @@ function gtag_report_conversion_line(url) {
                 </div>
                 <div class="case-content"><h3>企業品牌活動</h3><p>精美餐宴布置設計，打造企業品牌形象的高端活動現場。</p></div>
             </a>
-            <a href="column-beef.html" class="case-card">
+<a href="column-beef.html" class="case-card">
                 <div class="case-image">
                     <span class="case-tag">頂級和牛饗宴</span>
                     <span class="case-date">2026 / 08</span>
@@ -925,7 +1009,7 @@ function gtag_report_conversion_line(url) {
                 </div>
                 <div class="case-content"><h3>頂級和牛饗宴</h3><p>嚴選頂級和牛主餐，油花細緻的極致饗宴體驗。</p></div>
             </a>
-            <a href="case-double-decker-bus.html" class="case-card">
+<a href="case-double-decker-bus.html" class="case-card">
                 <div class="case-image">
                     <span class="case-tag">雙層巴士移動餐宴</span>
                     <span class="case-date">2026 / 07</span>
@@ -933,7 +1017,7 @@ function gtag_report_conversion_line(url) {
                 </div>
                 <div class="case-content"><h3>雙層巴士移動餐宴</h3><p>台北街景中的移動式高端餐宴體驗。</p></div>
             </a>
-            <a href="case-miaoli-manor.html" class="case-card">
+<a href="case-miaoli-manor.html" class="case-card">
                 <div class="case-image">
                     <span class="case-tag">苗栗莊園戶外私廚</span>
                     <span class="case-date">2026 / 05</span>
@@ -941,7 +1025,9 @@ function gtag_report_conversion_line(url) {
                 </div>
                 <div class="case-content"><h3>苗栗莊園戶外私廚</h3><p>山林莊園中的戶外精緻餐宴案例。</p></div>
             </a>
-        </div>
+</div></details>
+
+        
         <div class="section-cta"><a href="portfolio.html" class="btn">查看更多案例</a></div>
     </section>
 
@@ -950,20 +1036,20 @@ function gtag_report_conversion_line(url) {
     <section class="region-matrix">
         <div class="section-header">
             <span class="section-sub">Service Areas</span>
-            <h2 class="section-title">我們的私廚服務地區</h2>
+            <h2 class="section-title">8 縣市私廚到府服務地區</h2>
             <p class="section-desc">服務台北、新北、桃園、新竹、苗栗、台中、高雄、宜蘭，其他縣市與離島也可專案安排。</p>
         </div>
         <details class="region-accordion">
             <summary>查看服務地區列表</summary>
             <div class="region-grid">
-                <a href="private-chef-taipei.html" class="region-card"><h3>台北市</h3><p>信義、天母、內湖、高端豪宅區</p></a>
-                <a href="private-chef-newtaipei.html" class="region-card"><h3>新北市</h3><p>板橋、新店、林口、淡水等高端住宅區</p></a>
-                <a href="private-chef-taoyuan.html" class="region-card"><h3>桃園市</h3><p>青埔、高鐵特區、豪宅社區</p></a>
-                <a href="private-chef-hsinchu.html" class="region-card"><h3>新竹市</h3><p>科學園區、竹北高鐵特區、大樓豪宅</p></a>
-                <a href="private-chef-miaoli.html" class="region-card"><h3>苗栗縣</h3><p>山區莊園、戶外私廚</p></a>
-                <a href="private-chef-taichung.html" class="region-card"><h3>台中市</h3><p>七期豪宅、建設業董事長餐宴</p></a>
-                <a href="private-chef-kaohsiung.html" class="region-card"><h3>高雄市</h3><p>港灣企業主宴請、遊艇碼頭</p></a>
-                <a href="private-chef-yilan.html" class="region-card"><h3>宜蘭縣</h3><p>礁溪渡假別墅、溫泉會館</p></a>
+                <a href="private-chef-taipei.html" class="region-card"><h3>台北私廚</h3><p>信義、天母、內湖、高端豪宅區</p></a>
+                <a href="private-chef-newtaipei.html" class="region-card"><h3>新北私廚</h3><p>板橋、新店、林口、淡水等高端住宅區</p></a>
+                <a href="private-chef-taoyuan.html" class="region-card"><h3>桃園私廚</h3><p>青埔、高鐵特區、豪宅社區</p></a>
+                <a href="private-chef-hsinchu.html" class="region-card"><h3>新竹私廚</h3><p>科學園區、竹北高鐵特區、大樓豪宅</p></a>
+                <a href="private-chef-miaoli.html" class="region-card"><h3>苗栗私廚</h3><p>山區莊園、戶外私廚</p></a>
+                <a href="private-chef-taichung.html" class="region-card"><h3>台中私廚</h3><p>七期豪宅、建設業董事長餐宴</p></a>
+                <a href="private-chef-kaohsiung.html" class="region-card"><h3>高雄私廚</h3><p>港灣企業主宴請、遊艇碼頭</p></a>
+                <a href="private-chef-yilan.html" class="region-card"><h3>宜蘭私廚</h3><p>礁溪渡假別墅、溫泉會館</p></a>
             </div>
             <p class="section-desc" style="text-align:center;margin-top:1rem;"><a href="areas.html">查看完整服務地區說明</a></p>
         </details>
@@ -984,6 +1070,20 @@ function gtag_report_conversion_line(url) {
         <div class="media-cta">
             <a href="chef-media.html" class="btn">查看完整媒體報導</a>
         </div>
+    </section>
+
+    <section class="seo-info" id="price-booking">
+        <div class="section-header">
+            <span class="section-sub">Price &amp; Booking</span>
+            <h2 class="section-title">到府私廚費用與預約須知</h2>
+            <p class="section-desc">精緻私廚與尊榮服務，從透明的起價與清楚的預約流程開始。</p>
+        </div>
+        <div class="seo-info-grid">
+            <div class="seo-info-card"><h3>到府私廚價格</h3><ul><li>6–8 人小型家宴 <strong>NT$38,000 起</strong></li><li>10–15 人企業宴席 <strong>NT$48,000 起</strong></li><li>VIP 頂級餐宴 <strong>NT$68,000 起</strong></li><li>20 人以上大型活動 <strong>NT$180,000 以上</strong></li></ul><p class="seo-note">以上為起價參考，實際依人數、菜單規格、場地與服務形式報價。</p><a href="pricing-private-chef.html" class="seo-link">查看完整價格說明 →</a></div>
+            <div class="seo-info-card"><h3>預約時間建議</h3><ul><li>一般場次：提前 7–14 天</li><li>旺季與節慶：提前 1 個月以上</li><li>指定主廚：提前 2–4 週</li><li>尾牙春酒旺季（11 月至隔年 1 月）：建議提前 1–2 個月</li></ul><p class="seo-note">LINE 或電話諮詢後，24 小時內回覆報價。</p><a href="faq-booking.html" class="seo-link">查看預約須知 →</a></div>
+            <div class="seo-info-card"><h3>服務地區</h3><p>台北、新北、桃園、新竹、苗栗、台中、宜蘭、高雄等 8 縣市到府私廚與企業外燴，其他縣市與離島可專案安排。</p><div class="seo-chips"><a href="private-chef-taipei.html">台北私廚</a><a href="private-chef-newtaipei.html">新北私廚</a><a href="private-chef-taoyuan.html">桃園私廚</a><a href="private-chef-hsinchu.html">新竹私廚</a><a href="private-chef-miaoli.html">苗栗私廚</a><a href="private-chef-taichung.html">台中私廚</a><a href="private-chef-yilan.html">宜蘭私廚</a><a href="private-chef-kaohsiung.html">高雄私廚</a></div></div>
+        </div>
+        <div class="seo-chips seo-chips-wide"><span>熱門服務：</span><a href="corporate-catering-tailend.html">尾牙外燴</a><a href="corporate-catering-springdinner.html">春酒外燴</a><a href="vip-banquet-chairman.html">董事長宴請</a><a href="vip-banquet-yacht.html">遊艇餐宴</a><a href="family-banquet-luxury.html">豪宅家宴</a><a href="private-chef.html">到府私廚</a><a href="areas.html">全台服務地區</a></div>
     </section>
 
     <section class="faq-preview">
@@ -1008,6 +1108,18 @@ function gtag_report_conversion_line(url) {
             <details class="faq-item">
                 <summary><h3>如何預約到府私廚服務？</h3></summary>
                 <p>只需 5 步驟：1. 加入 LINE 或來電諮詢 2. 主廚討論需求與預算 3. 確認專屬菜單與報價 4. 主廚團隊到府料理 5. 餐後清潔整理。全程專人協助，輕鬆完成預約。</p>
+            </details>
+            <details class="faq-item">
+                <summary><h3>到府私廚價格大約多少？</h3></summary>
+                <p>舒苑 6–8 人小型家宴 NT$38,000 起、10–15 人企業宴席 NT$48,000 起、VIP 頂級餐宴 NT$68,000 起、20 人以上大型活動 NT$180,000 以上。實際金額依人數、菜單規格、場地與服務形式報價。</p>
+            </details>
+            <details class="faq-item">
+                <summary><h3>舒苑到府私廚服務哪些縣市？</h3></summary>
+                <p>提供台北、新北、桃園、新竹、苗栗、台中、宜蘭、高雄等 8 縣市到府私廚與企業外燴服務，其他縣市與離島可專案安排。</p>
+            </details>
+            <details class="faq-item">
+                <summary><h3>到府私廚要提前多久預約？</h3></summary>
+                <p>一般場次建議提前 7–14 天，旺季與節慶建議提前 1 個月以上，指定主廚建議提前 2–4 週；尾牙春酒旺季（11 月至隔年 1 月）建議提前 1–2 個月。</p>
             </details>
         </div>
         <div class="section-cta"><a href="faq.html" class="btn">查看完整 FAQ</a></div>
@@ -1139,6 +1251,19 @@ function gtag_report_conversion_line(url) {
 </div>
 
     <script src="js/main.js"></script>
+
+    <script>
+    (function(){
+        try{
+            if(!('IntersectionObserver' in window)) return;
+            var els=document.querySelectorAll('.section-header,.brand-stats-grid,.service-card,.case-card,.why-us .card,.process-grid > *,.region-card,.article-card,.faq-grid > *');
+            document.documentElement.classList.add('js-reveal');
+            var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12,rootMargin:'0px 0px -5% 0px'});
+            els.forEach(function(el){el.classList.add('rv');io.observe(el);});
+            setTimeout(function(){document.documentElement.classList.remove('js-reveal');},9000);
+        }catch(e){}
+    })();
+    </script>
 </body>
 </html>
 

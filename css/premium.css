@@ -1,0 +1,195 @@
+/* ===== 舒苑 Premium 升級（首頁預覽版）===== */
+
+/* 1. 導覽列：不換行、去掉厚重膠囊，改成細緻金線 */
+nav#navbar { gap: 1rem; }
+.logo { flex-shrink: 0; }
+.logo-text { white-space: nowrap; font-size: .88rem; letter-spacing: .12em; }
+.logo-en { opacity: .75; }
+.nav-links { gap: .15rem; flex-wrap: nowrap; }
+.nav-links a {
+    white-space: nowrap;
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0;
+    padding: .55rem .8rem;
+    font-size: .84rem;
+    letter-spacing: .1em;
+}
+.nav-links a:hover, .nav-links a.active {
+    background: transparent; box-shadow: none; transform: none; color: var(--gold);
+}
+.nav-links a.sidebar-lang { display: none; }
+.nav-cta { white-space: nowrap; padding: .6rem 1.2rem; font-size: .78rem; letter-spacing: .18em; }
+.lang-switch { white-space: nowrap; }
+
+/* Logo 單色金調，與黑金配色一致 */
+.logo img { filter: grayscale(1) sepia(1) saturate(2.4) brightness(1.15) contrast(1.05); }
+
+@media (max-width: 1240px) { .logo-en { display: none; } }
+@media (max-width: 1100px) { .nav-links a { padding: .5rem .55rem; font-size: .8rem; letter-spacing: .06em; } }
+@media (max-width: 768px) {
+    .logo-text { font-size: .8rem; max-width: none; letter-spacing: .06em; }
+    .nav-links a { white-space: normal; padding: .85rem 1rem; }
+}
+
+/* 2. 首屏：精簡文字、讓照片說話 */
+.hero-desc { max-width: 720px; margin-left: auto; margin-right: auto; font-size: 1rem; line-height: 1.9; }
+.hero-trust {
+    display: flex; flex-wrap: wrap; justify-content: center; gap: .6rem 1.6rem;
+    margin: 1.2rem auto 0; padding: 0; list-style: none;
+    font-size: .82rem; letter-spacing: .12em; color: var(--gold-light);
+}
+.hero-trust li { position: relative; }
+.hero-trust li + li::before { content: "·"; position: absolute; left: -.95rem; color: var(--gold-dark); }
+@media (max-width: 768px) {
+    .hero-desc { font-size: .95rem; line-height: 1.85; }
+    .hero-trust { gap: .4rem 1rem; font-size: .74rem; letter-spacing: .06em; }
+    .hero-trust li + li::before { left: -.65rem; }
+}
+.premium-note { max-width: 860px; margin: 1.2rem auto 0; }
+.hero-trust { margin-bottom: 1.8rem; }
+@media (max-width: 768px) {
+    .hero-trust { display: grid; grid-template-columns: 1fr 1fr; gap: .5rem 1rem; max-width: 320px; text-align: center; }
+    .hero-trust li + li::before { display: none; }
+}
+
+/* ===================================================== */
+/* ===== 第二階段：整頁質感升級 ===== */
+/* ===================================================== */
+html { scroll-behavior: smooth; }
+::selection { background: rgba(255,210,77,.35); color: #fff; }
+
+/* A. 首屏：深色漸層、金色細框、更大的標題 */
+.hero::before {
+    background:
+      radial-gradient(ellipse at 50% 45%, rgba(0,0,0,.25) 0%, rgba(0,0,0,.72) 70%),
+      linear-gradient(to bottom, rgba(0,0,0,.55) 0%, rgba(0,0,0,.35) 40%, rgba(0,0,0,.85) 100%) !important;
+}
+.hero::after {
+    content: ""; position: absolute; inset: 28px; z-index: 2; pointer-events: none;
+    border: 1px solid rgba(255,210,77,.28);
+}
+.hero-title { font-weight: 300; letter-spacing: .16em; text-shadow: 0 4px 30px rgba(0,0,0,.6); }
+.hero-manifesto { letter-spacing: .3em; text-shadow: 0 2px 20px rgba(0,0,0,.7); }
+.hero-subtitle { letter-spacing: .22em; }
+.hero-eyebrow { letter-spacing: .5em; }
+@media (max-width: 768px) { .hero::after { inset: 10px; } }
+
+/* B. 區塊節奏：更多留白 */
+.brand-stats, .brand-story, .chef-eeat, .services-section, .why-us, .process,
+.reviews-section, .cases, .region-matrix, .faq-preview, .articles {
+    padding-top: clamp(4rem, 8vw, 7rem);
+    padding-bottom: clamp(4rem, 8vw, 7rem);
+}
+
+/* C. 標題：細字距＋金色分隔線 */
+.section-header { margin-bottom: clamp(2.5rem, 5vw, 4rem); text-align: center; }
+.section-sub {
+    display: inline-flex; align-items: center; gap: 1rem;
+    letter-spacing: .45em; font-size: .78rem; color: var(--gold);
+}
+.section-sub::before, .section-sub::after {
+    content: ""; width: 42px; height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold-dark));
+}
+.section-sub::after { transform: scaleX(-1); }
+.section-title { font-weight: 300; letter-spacing: .14em; position: relative; padding-bottom: 1.6rem; }
+.section-title::after {
+    content: ""; position: absolute; left: 50%; bottom: 0; width: 64px; height: 1px;
+    transform: translateX(-50%);
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+
+/* D. 數據列：大數字、金色漸層 */
+.brand-stats-title { letter-spacing: .14em; font-weight: 300; }
+.stat-number {
+    font-size: clamp(2.6rem, 6vw, 4.2rem) !important; font-weight: 300;
+    background: linear-gradient(180deg, #FFEA95 0%, #D4AF37 100%);
+    -webkit-background-clip: text; background-clip: text; color: transparent !important;
+}
+.stat-label { letter-spacing: .18em; font-size: .82rem; }
+
+/* E. 服務卡片：整齊置中排列、文字底部深色漸層 */
+.services-grid { display: flex !important; flex-wrap: wrap; justify-content: center; gap: 1.6rem; }
+.services-grid > .service-card { flex: 0 0 calc((100% - 4.8rem) / 4); }
+@media (max-width: 1024px) { .services-grid > .service-card { flex-basis: calc((100% - 3.2rem) / 3); } }
+@media (max-width: 768px)  { .services-grid > .service-card { flex-basis: calc((100% - 1.2rem) / 2); } .services-grid { gap: 1.2rem; } }
+.service-card { border-color: rgba(255,210,77,.18); }
+.service-card::after {
+    content: ""; position: absolute; inset: 0; pointer-events: none;
+    background: linear-gradient(to top, rgba(0,0,0,.92) 0%, rgba(0,0,0,.55) 38%, rgba(0,0,0,0) 70%);
+}
+.service-card .service-overlay { z-index: 2; background: transparent !important; }
+.service-card h3, .service-card h4 { text-shadow: 0 2px 12px rgba(0,0,0,.8); letter-spacing: .08em; }
+
+/* F. 案例：首頁只顯示 6 張精選、卡片質感 */
+.case-card { border-color: rgba(255,210,77,.16); position: relative; transition: transform .45s var(--ease), box-shadow .45s var(--ease), border-color .45s; }
+.case-card::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 2px; z-index: 3;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent); opacity: 0; transition: opacity .4s; }
+.case-card:hover { transform: translateY(-6px); box-shadow: 0 24px 50px rgba(0,0,0,.45), 0 0 0 1px rgba(255,210,77,.45); }
+.case-card:hover::before { opacity: 1; }
+
+/* G. 一般卡片（為什麼選擇、流程、地區）細緻化 */
+.why-us .card, .process-grid > *, .region-card, .faq-grid > * {
+    border: 1px solid rgba(255,210,77,.16) !important;
+    background: linear-gradient(180deg, rgba(255,255,255,.035), rgba(255,255,255,.01)) !important;
+    transition: transform .4s var(--ease), border-color .4s, box-shadow .4s;
+}
+.why-us .card:hover, .region-card:hover { transform: translateY(-4px); border-color: rgba(255,210,77,.5) !important; box-shadow: 0 18px 40px rgba(0,0,0,.35); }
+.process-grid [class*="num"], .process-grid .step-num { font-family: var(--display); font-size: 2rem; font-weight: 300; }
+
+/* H. 區塊交替背景：加入極淡的金色光暈 */
+.brand-story, .reviews-section, .region-matrix {
+    background: radial-gradient(ellipse at 50% 0%, rgba(255,210,77,.07), transparent 60%), var(--bg2) !important;
+}
+
+/* I. 滑入動畫（JS 啟動才生效，失敗時內容照常顯示） */
+.js-reveal .rv { opacity: 0; transform: translateY(26px); transition: opacity .9s var(--ease), transform .9s var(--ease); }
+.js-reveal .rv.in { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) { .js-reveal .rv { opacity: 1; transform: none; transition: none; } }
+
+/* ===== 修正：9 張服務卡改 3×3、文字更清楚；菜單 5 張置中 ===== */
+.services-grid > .service-card { flex: 0 0 calc((100% - 3.2rem) / 3); aspect-ratio: 4/5; }
+@media (max-width: 768px) { .services-grid > .service-card { flex-basis: calc((100% - 1.2rem) / 2); aspect-ratio: 3/4; } }
+.service-card::after {
+    background: linear-gradient(to top, rgba(0,0,0,.95) 0%, rgba(0,0,0,.82) 34%, rgba(0,0,0,.35) 60%, rgba(0,0,0,0) 80%) !important;
+}
+.service-card .service-overlay { position: absolute; left: 0; right: 0; bottom: 0; padding: 1.4rem 1.4rem 1.6rem; }
+.service-card .service-overlay h3, .service-card .service-overlay h4 { color: var(--gold-light); font-size: 1.15rem; margin-bottom: .4rem; }
+.service-card .service-overlay p { color: #f4f1e8; text-shadow: 0 1px 8px rgba(0,0,0,.9); font-size: .88rem; line-height: 1.7; }
+.grid-4 { display: flex !important; flex-wrap: wrap; justify-content: center; gap: 1.6rem; }
+.grid-4 > * { flex: 0 0 calc((100% - 4.8rem) / 4); }
+@media (max-width: 1024px) { .grid-4 > * { flex-basis: calc((100% - 1.6rem) / 2); } }
+@media (max-width: 560px) { .grid-4 > * { flex-basis: 100%; } }
+.service-card img { z-index: 0; }
+.service-card::after { z-index: 1; }
+.service-card .service-overlay { z-index: 2; }
+@media (max-width: 768px) {
+    .service-card .service-overlay { padding: 1rem; }
+    .service-card .service-overlay h3, .service-card .service-overlay h4 { font-size: 1rem; margin: 0; }
+    .service-card .service-overlay p { display: none; }
+    .services-grid > .service-card { aspect-ratio: 1/1; }
+}
+
+/* ===== 案例展開、費用與預約區塊 ===== */
+.cases-more { max-width: 1200px; margin: 2rem auto 0; }
+.cases-more > summary { list-style: none; cursor: pointer; text-align: center; color: var(--gold); letter-spacing: .2em; font-size: .9rem;
+    border: 1px solid rgba(255,210,77,.35); padding: .9rem 1.2rem; transition: all .3s; }
+.cases-more > summary::-webkit-details-marker { display: none; }
+.cases-more > summary:hover { background: rgba(255,210,77,.08); border-color: var(--gold); }
+.cases-more[open] > summary { margin-bottom: 1.8rem; }
+.seo-info { padding: clamp(4rem,8vw,7rem) 5%; }
+.seo-info-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.6rem; max-width: 1200px; margin: 0 auto; }
+.seo-info-card { border: 1px solid rgba(255,210,77,.18); background: linear-gradient(180deg, rgba(255,255,255,.035), rgba(255,255,255,.01)); padding: 2rem 1.8rem; }
+.seo-info-card h3 { color: var(--gold-light); letter-spacing: .12em; margin-bottom: 1rem; font-weight: 400; }
+.seo-info-card ul { list-style: none; padding: 0; margin: 0 0 1rem; }
+.seo-info-card li { padding: .5rem 0; border-bottom: 1px solid rgba(255,255,255,.07); line-height: 1.7; }
+.seo-info-card li strong { color: var(--gold); font-weight: 500; }
+.seo-note { font-size: .82rem; color: #d9d6cc; line-height: 1.8; }
+.seo-link { display: inline-block; margin-top: .8rem; color: var(--gold); letter-spacing: .1em; font-size: .88rem; }
+.seo-chips { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: 1rem; }
+.seo-chips a { border: 1px solid rgba(255,210,77,.3); padding: .4rem .9rem; font-size: .84rem; color: var(--text); transition: all .3s; }
+.seo-chips a:hover { color: var(--gold); border-color: var(--gold); }
+.seo-chips-wide { justify-content: center; max-width: 1200px; margin: 2rem auto 0; align-items: center; }
+.seo-chips-wide span { color: var(--gold); letter-spacing: .15em; font-size: .85rem; }
+@media (max-width: 900px) { .seo-info-grid { grid-template-columns: 1fr; } }
