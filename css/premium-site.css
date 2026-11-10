@@ -53,3 +53,10 @@ nav#navbar { gap: 1rem; }
 .byline { max-width: 860px; margin: 1.6rem auto 0; padding: 0 1.25rem; }
 .byline p { font-size: .86rem; line-height: 1.9; color: #d9d6cc; letter-spacing: .06em; border-left: 2px solid var(--gold-dark); padding-left: 1rem; }
 .byline a { color: var(--gold); }
+
+/* 頁尾登記資訊、資料表 */
+.footer-legal { font-size: .78rem; color: #a9a59a; margin: .5rem 0 .2rem; letter-spacing: .04em; }
+.footer-legal a { color: var(--gold); }
+.info-table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+.info-table th, .info-table td { text-align: left; padding: .85rem 1rem; border-bottom: 1px solid rgba(255,210,77,.18); vertical-align: top; line-height: 1.8; }
+.info-table th { width: 32%; color: var(--gold-light); font-weight: 400; letter-spacing: .08em; }

@@ -194,3 +194,10 @@ html { scroll-behavior: smooth; }
 .seo-chips-wide { justify-content: center; max-width: 1200px; margin: 2rem auto 0; align-items: center; }
 .seo-chips-wide span { color: var(--gold); letter-spacing: .15em; font-size: .85rem; }
 @media (max-width: 900px) { .seo-info-grid { grid-template-columns: 1fr; } }
+
+/* 頁尾登記資訊、資料表 */
+.footer-legal { font-size: .78rem; color: #a9a59a; margin: .5rem 0 .2rem; letter-spacing: .04em; }
+.footer-legal a { color: var(--gold); }
+.info-table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+.info-table th, .info-table td { text-align: left; padding: .85rem 1rem; border-bottom: 1px solid rgba(255,210,77,.18); vertical-align: top; line-height: 1.8; }
+.info-table th { width: 32%; color: var(--gold-light); font-weight: 400; letter-spacing: .08em; }
