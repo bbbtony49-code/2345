@@ -48,3 +48,8 @@ nav#navbar { gap: 1rem; }
 }
 .card, .media-card, .case-card { transition: transform .4s var(--ease), box-shadow .4s var(--ease), border-color .4s; }
 .card:hover, .case-card:hover { transform: translateY(-4px); box-shadow: 0 18px 40px rgba(0,0,0,.35); }
+
+/* 文章作者署名 */
+.byline { max-width: 860px; margin: 1.6rem auto 0; padding: 0 1.25rem; }
+.byline p { font-size: .86rem; line-height: 1.9; color: #d9d6cc; letter-spacing: .06em; border-left: 2px solid var(--gold-dark); padding-left: 1rem; }
+.byline a { color: var(--gold); }
