@@ -201,3 +201,6 @@ html { scroll-behavior: smooth; }
 .info-table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
 .info-table th, .info-table td { text-align: left; padding: .85rem 1rem; border-bottom: 1px solid rgba(255,210,77,.18); vertical-align: top; line-height: 1.8; }
 .info-table th { width: 32%; color: var(--gold-light); font-weight: 400; letter-spacing: .08em; }
+
+/* 圖片具 width/height 屬性時維持比例，避免拉伸 */
+:where(img[width][height]) { height: auto; }
