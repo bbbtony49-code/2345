@@ -104,3 +104,7 @@ nav#navbar { gap: 1rem; }
 /* a11y */
 main { display: block; }
 .content-text a:not(.btn), .seo-info p a, .faq-item p a, .byline a, .team-faq a, .seo-premium p a, .seo-depth p a, .footer-legal a { text-decoration: underline; text-underline-offset: 3px; }
+.rs-badges{margin:.2rem 0 0!important}
+.rs-badge{display:inline-block;background:var(--gold);color:#111;font-size:.74rem;font-weight:600;padding:.08rem .55rem;margin:0 .3rem .2rem 0;letter-spacing:.04em}
+.rs-title{color:var(--text)!important;font-weight:500}
+.rs-spec span{display:inline-block;border-left:2px solid var(--gold);padding-left:.4rem;margin-right:.5rem;color:var(--gold);font-size:.8rem}
