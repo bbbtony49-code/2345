@@ -1,0 +1,30 @@
+# 這些檔案只在本機使用，不要發佈到網站上
+exclude:
+  - README.txt
+  - README-case-baby-zhuazhou.txt
+  - README-datetime-fix.txt
+  - README-deploy-instructions.txt
+  - README-faq-all-columns.txt
+  - README-hero-batch1.txt
+  - README-hero-batch2.txt
+  - README-homepage-cards-fix.txt
+  - README-ogimage-final.txt
+  - README-seo-geo-fix.txt
+  - README-webp-optimize.txt
+  - README_schema修正說明.md
+  - SIDEBAR_MENU_DOCS.md
+  - SIDEBAR_TEST_GUIDE.md
+  - WEBSITE_STRUCTURE.md
+  - 2345.code-workspace
+  - content_audit.csv
+  - deploy.ps1
+  - redeploy.txt
+  - add_sidebar_menu.py
+  - automation_seo_structure.py
+  - check_all_links.py
+  - execute_seo_spider_web.py
+  - fix_videos.py
+  - run_seo_automation.py
+  - test_sidebar.py
+  - validate_sidebar.py
+  - scripts
