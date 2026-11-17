@@ -17,10 +17,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap"></noscript>
     <link rel="stylesheet" href="/css/fonts.css?v=1">
-    <link rel="stylesheet" href="css/style.css?v=8">
+    <link rel="stylesheet" href="css/style.css?v=9">
     <link rel="stylesheet" href="css/premium-site.css?v=6">
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-2P9MZY1F46"></script>
+<script data-n="shuyuan-lazy">
+(function(){var l=0;function g(){if(l)return;l=1;var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-2P9MZY1F46';document.head.appendChild(s);}
+['pointerdown','keydown','scroll','touchstart','mousemove'].forEach(function(e){window.addEventListener(e,g,{once:true,passive:true});});
+window.addEventListener('load',function(){setTimeout(g,6000);});})();
+</script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -29,11 +33,15 @@
 gtag('config', 'AW-11459072287');
 
 function gtag_report_conversion_phone(url) {
+    var done = false;
     var callback = function () {
+        if (done) { return; }
+        done = true;
         if (typeof(url) != 'undefined') {
             window.location = url;
         }
     };
+    setTimeout(callback, 1200);
     gtag('event', 'conversion', {
         'send_to': ['AW-11459072287/OO6CCLSOzcgcEJ-ijtgq', 'AW-11459072287/x34qCJy8380cEJ-ijtgq'],
         'event_callback': callback
@@ -41,11 +49,15 @@ function gtag_report_conversion_phone(url) {
     return false;
 }
 function gtag_report_conversion_line(url) {
+    var done = false;
     var callback = function () {
+        if (done) { return; }
+        done = true;
         if (typeof(url) != 'undefined') {
             window.location = url;
         }
     };
+    setTimeout(callback, 1200);
     gtag('event', 'conversion', {
         'send_to': ['AW-11459072287/OO6CCLSOzcgcEJ-ijtgq', 'AW-11459072287/5SWLCIKn980cEJ-ijtgq'],
         'event_callback': callback

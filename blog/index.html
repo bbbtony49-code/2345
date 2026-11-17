@@ -17,7 +17,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
     <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
     <meta name="theme-color" content="#0a0a0a">
-    <link rel="stylesheet" href="../css/style.css?v=8">
+    <link rel="stylesheet" href="../css/style.css?v=9">
     <link rel="stylesheet" href="../css/premium-site.css?v=6">
     <style>
         .collapsible-showcase{max-width:900px;margin:2.5rem auto 0;text-align:center;}
@@ -32,7 +32,11 @@
         .showcase-category h3.cat-title{color:#D4AF37;font-family:'Noto Serif TC',serif;font-size:1.15rem;margin-bottom:1.2rem;padding-bottom:0.6rem;border-bottom:1px solid var(--border);text-align:center;}
     </style>
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-2P9MZY1F46"></script>
+<script data-n="shuyuan-lazy">
+(function(){var l=0;function g(){if(l)return;l=1;var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-2P9MZY1F46';document.head.appendChild(s);}
+['pointerdown','keydown','scroll','touchstart','mousemove'].forEach(function(e){window.addEventListener(e,g,{once:true,passive:true});});
+window.addEventListener('load',function(){setTimeout(g,6000);});})();
+</script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -41,11 +45,15 @@
 gtag('config', 'AW-11459072287');
 
 function gtag_report_conversion(url) {
+    var done = false;
     var callback = function () {
+        if (done) { return; }
+        done = true;
         if (typeof(url) != 'undefined') {
             window.location = url;
         }
     };
+    setTimeout(callback, 1200);
     gtag('event', 'conversion', {
         'send_to': 'AW-11459072287/OO6CCLSOzcgcEJ-ijtgq',
         'event_callback': callback

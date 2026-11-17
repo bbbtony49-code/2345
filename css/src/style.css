@@ -3136,11 +3136,10 @@ body.entrance-active {
     position: absolute;
     border-radius: 50%;
     background: radial-gradient(circle, #FFEA95 0%, #D4AF37 60%, transparent 100%);
-    box-shadow: 0 0 6px 1px rgba(255, 210, 77, 0.7);
     opacity: 0;
     animation-name: entranceSparkleTwinkle;
     animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 2;
 }
 
 @keyframes entranceSparkleTwinkle {
@@ -3154,9 +3153,8 @@ body.entrance-active {
     z-index: 4;
     background: linear-gradient(100deg, transparent 42%, rgba(255, 234, 149, 0.55) 50%, transparent 58%);
     transform: translateX(-120%);
-    animation: entranceSweepMove 2.6s ease-in-out 0.4s infinite;
+    animation: entranceSweepMove 2.6s ease-in-out 0.4s 1;
     pointer-events: none;
-    mix-blend-mode: screen;
 }
 
 @keyframes entranceSweepMove {
@@ -3192,7 +3190,7 @@ body.entrance-active {
     border-radius: 50%;
     background: radial-gradient(circle, rgba(255, 210, 77, 0.35) 0%, transparent 70%);
     opacity: 0;
-    animation: entranceGlowPulse 2.4s ease-in-out 0.2s infinite;
+    animation: entranceGlowPulse 2.4s ease-in-out 0.2s 1 forwards;
     pointer-events: none;
 }
 
@@ -3204,8 +3202,10 @@ body.entrance-active {
 
 .entrance-ornament-line {
     width: 1px;
-    height: 0;
+    height: 34px;
     background: linear-gradient(180deg, transparent, rgba(255, 210, 77, 0.8), transparent);
+    opacity: 0;
+    transform: scaleY(0);
     animation: entranceLineGrow 0.7s var(--ease) forwards;
 }
 
@@ -3220,8 +3220,8 @@ body.entrance-active {
 }
 
 @keyframes entranceLineGrow {
-    from { height: 0; opacity: 0; }
-    to { height: 34px; opacity: 1; }
+    from { transform: scaleY(0); opacity: 0; }
+    to { transform: scaleY(1); opacity: 1; }
 }
 
 .entrance-logo {
@@ -3264,7 +3264,7 @@ body.entrance-active {
     -webkit-text-fill-color: transparent;
     color: var(--text);
     opacity: 0;
-    animation: entranceFadeUp 0.9s var(--ease) 0.65s forwards, entranceShimmer 3.5s linear 1.2s infinite;
+    animation: entranceFadeUp 0.9s var(--ease) 0.65s forwards;
 }
 
 @keyframes entranceShimmer {
@@ -3572,3 +3572,5 @@ ol.content-text, ul.content-text { text-align: left; max-width: 720px; margin-le
     .floating-btn { width: 42px; height: 42px; font-size: 1.05rem; opacity: 0.92; }
     footer { padding-bottom: 4.5rem; }
 }
+
+@media (prefers-reduced-motion: reduce) { .site-entrance { display: none; } }
