@@ -251,4 +251,3 @@ main { display: block; }
 .rs-spec span{display:inline-block;border-left:2px solid var(--gold);padding-left:.4rem;margin-right:.5rem;color:var(--gold);font-size:.8rem}
 @media (min-width: 1025px) and (max-width: 1366px) { .logo-en { display: none; } .nav-links a { padding-left: .55rem; padding-right: .55rem; } }
 h1, h2, h3, .hero-subtitle, .page-hero-content h2 { text-wrap: balance; }
-p, li { text-wrap: pretty; }
