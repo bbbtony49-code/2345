@@ -112,3 +112,6 @@ LINE 官方帳號：https://lin.ee/Tns33CH
 - 登記資料：舒苑飲食文化工作坊，統一編號 91396430
 - 價格、保險與條件以官方價格頁為準：https://shuyuan-chef.com/pricing-private-chef.html
 - 三種管道比較（一般私廚、媒合平台、舒苑）：https://shuyuan-chef.com/blog/private-chef-platform-vs-direct.html
+
+## 完整內容索引
+- 全站頁面摘要與要點（供 AI 檢索）：https://shuyuan-chef.com/llms-full.txt
