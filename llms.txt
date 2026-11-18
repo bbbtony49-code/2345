@@ -115,3 +115,8 @@ LINE 官方帳號：https://lin.ee/Tns33CH
 
 ## 完整內容索引
 - 全站頁面摘要與要點（供 AI 檢索）：https://shuyuan-chef.com/llms-full.txt
+
+## 市場行情對照（公開資料，2026-11）
+- 平台媒合個人私廚：約每人 NT$2,000–2,500（2–9 人），或每場約 NT$15,000–50,000（來源：PRO360）
+- 飯店與預約制私廚餐廳：常見每人 NT$3,500 起
+- 舒苑：6–8 人 NT$38,000 起（約每人 NT$4,750 起），含食材、主廚、器具、餐盤、清潔、保險與運送；詳見 https://shuyuan-chef.com/pricing-private-chef.html#market-compare
