@@ -1,0 +1,28 @@
+diff --git a/blog/index.html b/blog/index.html
+index 9d02c88c..58383f47 100644
+--- a/blog/index.html
++++ b/blog/index.html
+@@ -5,6 +5,7 @@
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>主廚專欄｜到府私廚文章、餐飲指南｜舒苑飲食文化</title>
+     <meta name="description" content="舒苑飲食文化｜Luxury Private Chef主廚專欄頁面，整理到府私廚、企業外燴、Fine Dining 餐宴與食材選品的專業文章。">
++    <meta name="robots" content="index, follow">
+     <link rel="canonical" href="https://shuyuan-chef.com/blog/">
+     <link rel="preload" as="image" href="../assets/images/主廚團隊擺盤.webp" imagesrcset="../assets/images/%E4%B8%BB%E5%BB%9A%E5%9C%98%E9%9A%8A%E6%93%BA%E7%9B%A4-w480.webp 480w, ../assets/images/%E4%B8%BB%E5%BB%9A%E5%9C%98%E9%9A%8A%E6%93%BA%E7%9B%A4-w800.webp 800w, ../assets/images/%E4%B8%BB%E5%BB%9A%E5%9C%98%E9%9A%8A%E6%93%BA%E7%9B%A4.webp 1600w" imagesizes="100vw" fetchpriority="high">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+@@ -90,8 +91,8 @@ function gtag_report_conversion(url) {
+   ]
+ }
+ </script>
+-<script type="application/ld+json" data-n="aeo">{"@context": "https://schema.org", "@type": "WebPage", "@id": "https://shuyuan-chef.com/blog/index.html#webpage", "url": "https://shuyuan-chef.com/blog/index.html", "name": "主廚專欄", "inLanguage": "zh-TW", "dateModified": "2026-11-18", "isPartOf": {"@id": "https://shuyuan-chef.com/#website"}, "publisher": {"@id": "https://shuyuan-chef.com/#org"}, "speakable": {"@type": "SpeakableSpecification", "cssSelector": ["h1", ".ai-summary"]}, "description": "舒苑飲食文化｜Luxury Private Chef主廚專欄頁面，整理到府私廚、企業外燴、Fine Dining 餐宴與食材選品的專業文章。"}</script>
+-<script type="application/ld+json" data-n="faq-auto">{"@context": "https://schema.org", "@type": "FAQPage", "@id": "https://shuyuan-chef.com/blog/index.html#faq", "mainEntity": [{"@type": "Question", "name": "建立一座兼具知識、權威與美感的高端餐宴內容平台有哪些重點？", "acceptedAnswer": {"@type": "Answer", "text": "每一篇文章都是舒苑主廚親自整理的私廚實務、食材觀察與高端餐宴經驗，幫您快速掌握預約、菜單與服務策略。"}}, {"@type": "Question", "name": "主廚專欄全文庫有哪些重點？", "acceptedAnswer": {"@type": "Answer", "text": "從私廚基礎知識、到府服務、外燴規劃到食材與品牌故事，共 100 篇完整專欄文章，依主題分為六大章節。"}}, {"@type": "Question", "name": "煎封與炙燒的作用有哪些重點？", "acceptedAnswer": {"@type": "Answer", "text": "煎封不是為了鎖住肉汁，而是為了產生焦香。說明梅納反應、讓肉類上色的關鍵，以及避免煎不上色的幾個步驟。"}}, {"@type": "Question", "name": "為什麼要用當季食材？", "acceptedAnswer": {"@type": "Answer", "text": "當季食材更鮮甜、價格較穩定，也讓菜色更有時序感。說明使用當季食材的 4 個好處，以及台灣常見的產季例子。"}}]}</script>
++<script type="application/ld+json" data-n="aeo">{"@context": "https://schema.org", "@type": "WebPage", "@id": "https://shuyuan-chef.com/blog/#webpage", "url": "https://shuyuan-chef.com/blog/", "name": "主廚專欄", "inLanguage": "zh-TW", "dateModified": "2026-11-18", "isPartOf": {"@id": "https://shuyuan-chef.com/#website"}, "publisher": {"@id": "https://shuyuan-chef.com/#org"}, "speakable": {"@type": "SpeakableSpecification", "cssSelector": ["h1", ".ai-summary"]}, "description": "舒苑飲食文化｜Luxury Private Chef主廚專欄頁面，整理到府私廚、企業外燴、Fine Dining 餐宴與食材選品的專業文章。"}</script>
++<script type="application/ld+json" data-n="faq-auto">{"@context": "https://schema.org", "@type": "FAQPage", "@id": "https://shuyuan-chef.com/blog/#faq", "mainEntity": [{"@type": "Question", "name": "建立一座兼具知識、權威與美感的高端餐宴內容平台有哪些重點？", "acceptedAnswer": {"@type": "Answer", "text": "每一篇文章都是舒苑主廚親自整理的私廚實務、食材觀察與高端餐宴經驗，幫您快速掌握預約、菜單與服務策略。"}}, {"@type": "Question", "name": "主廚專欄全文庫有哪些重點？", "acceptedAnswer": {"@type": "Answer", "text": "從私廚基礎知識、到府服務、外燴規劃到食材與品牌故事，共 100 篇完整專欄文章，依主題分為六大章節。"}}, {"@type": "Question", "name": "煎封與炙燒的作用有哪些重點？", "acceptedAnswer": {"@type": "Answer", "text": "煎封不是為了鎖住肉汁，而是為了產生焦香。說明梅納反應、讓肉類上色的關鍵，以及避免煎不上色的幾個步驟。"}}, {"@type": "Question", "name": "為什麼要用當季食材？", "acceptedAnswer": {"@type": "Answer", "text": "當季食材更鮮甜、價格較穩定，也讓菜色更有時序感。說明使用當季食材的 4 個好處，以及台灣常見的產季例子。"}}]}</script>
+ </head>
+ <body>
+     <nav id="navbar">
+@@ -416,4 +417,3 @@ function gtag_report_conversion(url) {
+ 
+ 
+ 
+-
