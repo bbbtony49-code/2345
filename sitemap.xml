@@ -532,12 +532,12 @@
 </url>
 <url>
 <loc>https://shuyuan-chef.com/menu-20.html</loc>
-<lastmod>2026-11-23</lastmod>
+<lastmod>2026-11-26</lastmod>
 <priority>0.5</priority>
 </url>
 <url>
 <loc>https://shuyuan-chef.com/menu-30.html</loc>
-<lastmod>2026-11-23</lastmod>
+<lastmod>2026-11-26</lastmod>
 <priority>0.5</priority>
 </url>
 <url>
@@ -1512,6 +1512,11 @@
 </url>
 <url>
 <loc>https://shuyuan-chef.com/videos.html</loc>
+<lastmod>2026-11-26</lastmod>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://shuyuan-chef.com/blog/banquet-dishes-guide.html</loc>
 <lastmod>2026-11-26</lastmod>
 <priority>0.6</priority>
 </url>
